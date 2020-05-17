@@ -1,0 +1,2301 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+ul,li{
+    list-style: none;
+}
+input{
+    height: 42px;
+    border-radius: 8px;
+    display: block;
+    background-color: $bg;
+    border: 1px solid $LightGrey;
+    box-sizing: border-box;
+    padding: 0 16px;
+    font-size: 10px;
+    line-height: 12px;
+    color: $darkGrey;
+
+    &::placeholder{
+        color: $MedGrey;
+    }
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+    position: relative;
+    overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.bottom-blocks {
+	flex: 0 0 auto;
+}
+a,button{
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.subhead{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $darkGrey;
+
+    &--teal{
+        color: $DarkTeal;
+    }
+}
+
+
+h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: $black;
+
+    @include for-md(){
+        font-size: 40px;
+        line-height: 48px;
+    }
+    @include for-sm(){
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: $black;
+
+    @include for-md(){
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    @include for-sm(){
+        font-size: 24px;
+        line-height: 27px;
+    }
+}
+h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $black;
+
+    @include for-md(){
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+h4{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+
+    @include for-md(){
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.hyper-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    text-decoration: none;
+    transition: .3s;
+
+    @include for-md(){
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &:hover{
+        opacity: .7;
+        .hyper-link__icon{
+            margin-left: 5px;
+        }
+    }
+
+    &--teal{
+        color: $DarkTeal;
+    }
+
+    &__icon{
+        height: 24px;
+        width: 24px;
+        stroke: $DarkTeal;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 16px;
+        margin-top: -2px;
+        transform: rotate(-90deg);
+        transition: .3s;
+       
+    }
+}
+.exerpt{
+    font-size: 18px;
+    line-height: 24px;
+    &--lightgrey{
+        color: $MedGrey;
+    }
+
+    @include for-md(){
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+.exerpt + .exerpt{
+    margin-top: 20px;
+}
+p{
+    font-size: 16px;
+    line-height: 24px;
+    color: $darkGrey;
+
+    @include for-sm(){
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    a{
+        font-size: 16px;
+        line-height: 24px;
+        color: $DarkTeal;
+
+        @include for-sm(){
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+.hint-text{
+    font-size: 12px;
+    line-height: 16px;
+    color: $darkGrey;
+
+    a{
+        font-size: 12px;
+        line-height: 16px;
+        color: #576473;
+        text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.button{
+    padding: 15px 36px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 100px;
+    text-decoration: none;
+    display:inline-block;
+    transition: .3s;
+
+    &__icon{
+        display: inline-block;
+        vertical-align: middle;
+        height: 24px;
+        width: 24px;
+        stroke: $white;
+        flex-shrink: 0;
+        margin-top: -4px;
+        margin-right: 10px;
+        transition: .3s;
+    }
+
+    &--theme-black{
+        color: $white;
+        background-color: $black;
+        border-color: $black;
+
+      
+
+        &:hover{
+            color: $black;
+            background-color: $white;
+
+            .button__icon{
+                stroke: $black;
+            }
+        }
+    }
+    &--theme-teal{
+        color: $white;
+        background-color: $LightTeal;
+        box-shadow: 0px 8px 16px rgba(0, 209, 222, 0.25);
+        border-color: $LightTeal;
+
+        &:hover{
+           
+            background-color: $white;
+            color: $LightTeal;
+        }
+    }
+    &--theme-white{
+        border-color: $LightGrey;
+        color: $darkGrey;
+        background-color: $white;
+        box-shadow: 0px 8px 16px rgba(87, 100, 115, 0.1);
+
+        &-transp{
+            background-color: transparent;
+            color: $white;
+        }
+        .icon{
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+            fill: $MedGrey;
+            stroke: $MedGrey;
+            transition: .3s;
+        }
+
+        &:hover{
+            background-color: $LightTeal;
+            border-color: $LightTeal;
+            color: $white;
+        }
+    }
+}
+img{
+    max-width: 100%;
+}
+.section{
+    &--margin{
+        margin-left: 24px;
+        margin-right: 24px;
+
+        @include for-md(){
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &--fluid{
+        margin: 0 auto;
+        width: 96%;
+        max-width: 1371px;
+    }
+}
+.container{
+    max-width: 1128px;
+}
+.wrapper{
+    position: relative;
+    @include for-md(){
+        overflow: hidden;
+    }
+}
+.header{
+    padding: 24px 0;
+    &__row{
+        display: flex;
+        align-items: center;
+
+        @include for-sm(){
+            flex-direction: column;
+        }
+    }
+
+    &__burger{
+        margin-right: 40px;
+
+        @include for-sm{
+            margin-right: 0;
+        }
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        @include for-sm(){
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+
+        }
+    }
+    &__right{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        @include for-sm(){
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    &__hyper-link{
+        
+        color: $white;
+        margin-right: 48px;
+
+        &--teal{
+            color: $DarkTeal;
+
+            span{
+                color: $LightTeal
+            }
+        }
+        
+        &--big-margin{
+            margin-right: 84px;
+        }
+
+        @include for-sm(){
+            margin-right: 0;
+        }
+    }
+    &__button{
+        margin-left: auto;
+
+        @include for-sm(){
+            display: none;
+        }
+    }
+    &__basket-btn{
+        margin-left: 48px;
+
+        @include for-sm(){
+            margin-left: auto;
+        }
+    }
+}
+.burger{
+    cursor: pointer;
+    &__icon{
+        height: 24px;
+        width: 24px;
+
+        &--white{
+            stroke: $white;
+        }
+
+        &--black{
+            stroke: $black;
+        }
+    }
+}
+
+.logo{
+    &--size-medium{
+        width: 168px;
+        height: 56px;
+        
+    }
+
+    &--size-big{
+        width: 228px;
+        height: 58px;
+    }
+
+    &__image{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center left;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.hero{
+    position: relative;
+    padding-bottom: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    @include for-md(){
+        padding-bottom: 60px;
+    }
+    &--supplies{
+        background: linear-gradient(rgba(0, 0, 0, 0.2) ), url('../images/backgrounds/supplies.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-bottom: 104px;
+        @include for-md(){
+            padding-bottom: 60px;
+        }
+    }
+    &--supplies-bottom{
+        background: linear-gradient(rgba(0, 0, 0, 0.2) ), url('../images/backgrounds/hero-care.jpg') no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        background-attachment: fixed;
+        padding: 182px 0;
+        margin-bottom: 102px;
+        @include for-md(){
+            margin-bottom: 50px;
+        }
+        h1{
+            margin: 0;
+            margin-bottom: 48px;
+            color: $white;
+        }
+        .exerpt{
+            margin-bottom: 48px;
+        }
+        @include for-md(){
+            padding: 80px 0;
+        }
+    }
+    
+    &__title{
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 75px;
+        color: $white;
+        margin: 0 0 48px;
+
+        @include for-md(){
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @include for-sm(){
+            font-size: 35px;
+            line-height: 40px;
+            margin: 0 0 24px;
+
+        }
+        &--lit{
+            margin-bottom: 48px;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 64px;
+            color: $white;
+            @include for-md(){
+                margin-bottom: 20px;
+                font-size: 46px;
+                line-height: 50px;
+            }
+            @include  for-md-mob{
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+        &--supplies{
+            color: $white;
+            text-align: center;
+            margin: 0;
+        }
+    }
+   &__content{
+    &--left-side{
+        padding-top: 80px;
+
+        @include for-md(){
+            padding-top: 60px;
+        }
+        @include for-md-mob(){
+            padding-top: 30px;
+        }
+    }
+    &--right-side{
+        padding-top: 34px;
+    }
+   }
+   &__exerpt{
+       margin-bottom: 48px;
+       @include for-md(){
+        margin-bottom: 20px;
+     }
+   }
+    .exerpt{
+        color: $white;
+    }
+    .hint-text{
+        margin-top: 24px;
+        color: $white;
+
+        @include for-sm(){
+           margin-top: 0;
+        }
+    }
+    &__get-started-form{
+        margin-top: 124px;
+
+        @include for-md(){
+            margin-top: 60px;
+        }
+
+        @include for-md-mob(){
+            margin-top: 40px;
+        }
+
+       
+    }
+    &__scroll{
+        cursor: pointer;
+        position: absolute;
+        bottom: 48px;
+        height: 24px;
+        width: 24px;
+        left: 50%;
+        margin-left: -12px;
+        transition: .3s;
+        animation: spin 2s infinite linear;
+
+        @include for-md(){
+            display: none;
+        }
+
+        &:hover{
+            opacity: .7;
+            animation-play-state: paused;
+        }
+    }
+    &__scroll-icon{
+        display: block;
+        width: 100%;
+        height: 100%;
+        stroke: $white;
+    }
+    &__subhead{
+        margin-bottom: 28px;
+        color: $white;
+        &--supplies{
+            margin-top: 48px;
+            margin-bottom: 23px;
+            text-align: center;
+        }
+        @include for-md(){
+           margin-bottom: 20px;
+        }
+    }
+    &--care{
+        background: linear-gradient(rgba(0, 0, 0, 0.2) ), url('../images/backgrounds/hero-care.jpg') no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 138px;
+        background-attachment: fixed;
+        @include  for-md{
+            padding-bottom: 60px;
+        }
+    }
+    &__button-container{
+        display: flex;
+        align-items: center;
+        @include  for-md-mob{
+            flex-wrap: wrap;
+        }
+    }
+    &__button{
+        &--lightteal{
+            background-color: $LightTeal;
+            border-color: transparent;
+            color: $white;
+            box-shadow: 0px 8px 16px rgba(0, 209, 222, 0.25);
+            &:hover{
+                background-color: $white;
+                border-color: $LightTeal;
+                color: $LightTeal;
+            }
+            @include  for-md-mob{
+                width: 100%;
+                margin: 0 auto 20px;
+            }
+        }
+        &--white{
+            display: flex;
+            align-items: center;
+            margin-left: 16px;
+            background-color: $white;
+            border-color: transparent;
+            color: $darkGrey;
+            .icon{
+                margin-right: 8px;
+                width: 24px;
+                height: 24px;
+                fill: $MedGrey;
+                stroke: $MedGrey;
+                transition: .3s;
+            }
+            &:hover{
+                color: $LightTeal;
+                .icon{
+                    fill: $LightTeal;
+                    stroke: $LightTeal;
+                }
+            }
+            @include  for-md-mob{
+                justify-content: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        &--care{
+            display: flex;
+            align-items: center;
+            @include for-lg{
+                padding: 15px 35px;
+            }
+            
+            @include for-tiny-mob{
+                width: 100%;
+                margin-top: 15px;
+                margin-left: 0;
+                justify-content: center;
+            }
+        }
+        &--care + &--care{
+            margin-left: 16px;
+            @include for-tiny-mob{
+                margin-left: 0;
+            }
+        }
+        &--bottom{
+            @include for-sm{
+                width: 100%;
+            }
+        }
+
+    }
+}
+.get-started-form{
+    &__row{
+        position: relative;
+        display: flex;
+
+        @include for-sm(){
+            flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        @include for-md-mob(){
+            flex-direction: column;
+        }
+    }
+    &__label{
+        width: 33.3%;
+        position: relative;
+
+        @include for-sm(){
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        @include for-md-mob(){
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    &__label + &__label{
+        margin-left: -49px;
+
+        @include for-sm(){
+            margin-left: 0;
+        }
+        &:before{
+            content: '';
+            left: 0;
+            height: 4px;
+            width: 4px;
+            position: absolute;
+            top: 50%;
+            margin-top: -2px;
+            border-radius: 50%;
+            background-color: $MedGrey;
+            z-index: 10;
+        }
+    }
+    &__button{
+        
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+
+        @include for-sm(){
+            position: relative;
+            right: auto;
+            top: auto;
+            margin-bottom: 20px;
+           width: 48%;
+        }
+
+        @include for-md-mob(){
+            width: 100%;
+        }
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        height: 56px;
+        background-color: $white;
+        border-radius: 100px;
+        padding: 0 69px 0 24px;
+        border: none;
+        font-size: 16px;
+        line-height: 24px;
+        olor: $darkGrey;
+        &::placeholder{
+            color: $darkGrey;
+        }
+    }
+}
+.live-chat{
+    position: fixed;
+    right: 48px;
+    bottom: 20px;
+    @include for-md(){
+        right: 10px;
+    }
+    &__text{
+        max-width: 215px;
+        box-sizing: border-box;
+        padding: 16px 24px;
+        box-shadow: 0px 8px 16px rgba(87, 100, 115, 0.1);
+        background-color: rgba(255,255,255, .8);
+        border-radius: 8px;
+        border: 1px solid #EFF2F4;
+        backdrop-filter: blur(8px);
+        margin-right: 13px;
+
+        @include for-md(){
+            display: none;
+        }
+        
+    }
+    &__btn{
+        height: 56px;
+        width: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $LightTeal;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        margin-top: 8px;
+        float: right;
+        transition: .3s;
+
+
+        animation: pulse 2s infinite;
+    }
+    &__icon{
+        height: 24px;
+        width: 24px;
+        stroke: $white;
+    }
+}
+.call-form{
+    padding: 80px 0;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+    @include for-md(){
+        padding: 40px 0;
+    }
+    &--teal-bg{
+        background-color: $LightTeal;
+        color: $white;
+    }
+
+    &--turquoise-bg{
+        background-color: $turquoise;
+    }
+    &__decor{
+        position: absolute;
+        left: -94px;
+        top: 50%;
+        margin-top: -134px;
+        height: 268px;
+        width: 268px;
+
+        &--big{
+            top: 0;
+            left: 0;
+            width: 477px;
+            height: 316px;
+            margin-top: 0;
+        }
+
+        @include for-lg(){
+            left: 0;
+        }
+
+        @include for-sm(){
+            display: none;
+        }
+
+    }
+    &__row{
+        position: relative;
+    }
+    &--light-teal{
+        background-color: $LightTeal;
+    }
+    &__group{
+        display: flex;
+        position: relative;
+
+        @include for-md(){
+            margin-top: 15px;
+        }
+
+        @include for-md-mob(){
+            flex-direction: column;
+        }
+    }
+    &__input-container{
+        width: 100%;
+    }
+    &__input{
+        background-color: $white;
+        border-radius: 100px;
+        display: block;
+        width: 100%;
+        height: 56px;
+        box-sizing: border-box;
+        padding: 0 185px 0 24px;
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+        border: none;
+
+        @include for-md-mob(){
+            padding: 0 24px;
+        }
+
+      
+    }
+
+    &__button{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include for-md-mob(){
+            position: relative;
+            top: auto;
+            right: auto;
+            margin-top: 10px;
+        }
+    }
+    &__text{
+        text-align: center;
+    }
+    &__title{
+        &--white{
+            color: $white;
+        }
+    }
+    &__exerpt{
+        &--white{
+            color: $white;
+        }
+    }
+    h2{
+        margin-bottom: 24px;
+
+        @include for-md(){
+            margin-bottom: 15px;
+        }
+    }
+}
+.logos{
+    padding: 70px 0;
+
+    @include for-md(){
+        padding: 35px 0;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item{
+        margin: 10px 24px;
+        display: flex;
+        align-items: center;
+    }
+    &__image{
+        max-width: 100%;
+        max-height: 42.88px;
+    }
+}
+.footer{
+    padding-bottom: 105px;
+    text-align: center;
+
+    @include for-md(){
+        padding-bottom: 50px;
+    }
+    p + p{
+        margin-top: 10px;
+    }
+}
+.articles{
+    padding: 69px 0 62px;
+    @include for-sm(){
+        padding: 30px 0;
+    }
+    .subhead{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        margin: 55.6px 0;
+    }
+
+    &__slider{
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        @include for-extra-sm(){
+            padding: 0;
+        }
+    }
+    &__slide{
+        box-sizing: border-box;
+        padding: 0 14px;
+    }
+
+    &__button-container{
+        margin-top: 48px;
+        text-align: center;
+    }
+    
+}
+
+.article{
+    &__image-container{
+        height: 234px;
+        display: block;
+        border-radius: 8px;
+    }
+    &__image{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+    }
+    &__link-container{
+        margin: 27px 0 18.5px;
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 22px;
+        color: $fullBlack;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    p{
+        color: $fullBlack;
+    }
+}
+
+.slider-arrow{
+        position: absolute;
+        top: 85px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        box-shadow: 0px 8px 16px rgba(87, 100, 115, 0.1);
+        border: 1px solid #EFF2F4;
+        background-color: $white;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            background-color: $black;
+
+            .slider-arrow__icon{
+                stroke: $white;
+            }
+        }
+        &--prev{
+            left: 0;
+            transform: rotate(90deg);
+        }
+        &--next{
+            right: 0;
+            transform: rotate(-90deg);
+        }
+    
+
+    &__icon{
+        height: 28px;
+        width: 28px;
+        stroke: $darkGrey;
+        transition: .3s;
+    }
+}
+.advantages{
+    padding: 120px 0 100px;
+
+    @include for-md(){
+        padding: 60px 0 50px;
+    }
+
+    &__icon{
+        height: 48px;
+        width: 48px;
+        stroke: $MedGrey;
+    }
+    h3{
+        margin: 48px 0;
+        @include for-md(){
+            margin: 24px 0;
+        }
+    }
+    .exerpt{
+        margin-bottom: 48px;
+
+        @include for-md(){
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.live-doctor{
+    padding: 80px 0 100px;
+
+    @include for-md(){
+        padding: 0 0 30px;
+    }
+    &__image{
+        max-width: 100%;
+
+        @include for-md{
+            display: none;
+        }
+    }
+    .subhead{
+        margin-bottom: 52px;
+
+        @include for-md(){
+            margin-bottom: 28px;
+        }
+    }
+    .exerpt{
+        margin: 52px 0;
+        @include for-md(){
+           margin: 28px 0;
+        }
+    }
+    .container{
+        position: relative;
+    }
+    &__decor{
+        position: absolute;
+        
+        &--type-1{
+            left: 45%;
+            top: 61px;
+            animation: rotation 15s infinite linear;
+        }
+        &--type-2{
+            left: 98%;
+            top: 0;
+            animation: spin 3s infinite linear;
+        }
+        &--type-3{
+            left: 54%;
+            bottom: -66px;
+            height: 25px;
+            width: 25px;
+            animation: rotation 15s infinite linear;
+        }
+        &--type-4{
+            right: calc(100% + 27px);
+            bottom: 0;
+            animation: spin 22s infinite linear;
+        }
+        @include for-md(){
+            display: none;
+        }
+    }
+
+}
+.request-prod{
+    padding-top: 138px;
+    @include for-md(){
+        padding-top: 40px;
+    }
+    &__content{
+        padding-top: 37px;
+    }
+    h1{
+      margin: 0 0 41px;
+
+      @include for-md(){
+          margin:  0 0 20px;
+      }
+    }
+    &__list{
+        margin: 50px 0 48px;
+
+        @include for-md(){
+            margin: 25px 0 24px;
+        }
+    }
+    &__list-item{
+        position: relative;
+        padding-left: 46px;
+        box-sizing: border-box;
+        font-size: 18px;
+        line-height: 24px;
+        color: $darkGrey;
+        font-weight: 500;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1px;
+            height: 24px;
+            width: 24px;
+            background:url(../images/icons/Check-teal.svg)  no-repeat center center;
+            background-size: contain;
+        }
+    }
+    &__list-item + &__list-item{
+        margin-top: 18px;
+    }
+    
+    &__image{
+        display: block;
+        max-width: 100%;
+        border-radius: 8px;
+
+        @include for-md(){
+            margin: 0 auto;
+        }
+    }
+    &__image + &__image{
+        margin-top: 30px;
+    }
+
+    &__button{
+        @include for-md-mob(){
+            width: 100%;
+        }
+    }
+    .container{
+        position: relative;
+    }
+
+    &__decor{
+        position: absolute;
+     
+
+        &--type-1{
+            top: 100px;
+            right: 52%;
+            height: 24px;
+            width: 24px;
+            animation: spin 15s infinite linear;
+        }
+
+        &--type-2{
+            bottom: 250px;
+            right: 56%;
+            height: 24px;
+            width: 24px;
+
+            animation: rotation 25s infinite linear;
+        }
+    }
+}
+
+.get-own-test{
+
+    &--margin-negative{
+        margin-top: -73px;
+
+        @include for-md(){
+            margin-top: -140px;
+        }
+    }
+    &__content{
+        padding-top: 145px;
+    }
+    h1{
+        color: $white;
+    }
+    background-color: $black;
+    border-radius: 8px;
+    padding: 127px 0 264px;
+
+    @include for-md(){
+        padding: 50px 0;
+    }
+    &__buttons{
+        margin-top: 48px;
+        display: flex;
+
+        @include for-md-mob(){
+            flex-direction: column;
+        }
+    }
+    &__button{
+        @include for-md-mob(){
+            width: 100%;
+        }
+    }
+    &__button + &__button{
+        margin-left: 17px;
+
+        @include for-md-mob(){
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+
+    &__image{
+        display: block;
+        margin: 0 auto;
+        position: sticky;
+        top: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+      transform: translate3d(0, -50%, 0);
+    }
+    50% {
+      transform: translate3d(0, 50%, 0);
+    }
+    100% {
+      transform: translate3d(0, -50%, 0);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+        // box-shadow: 0px 8px 16px rgba(0, 209, 222, 0.25);
+    }
+    70% {
+        box-shadow: 0 0 0 30px rgba(0, 209, 222, 0.25);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+    }
+  }
+
+
+  @keyframes rotation {
+    0% {
+      transform: translate(0) rotate(0);
+    }
+    50% {
+      transform: translate(-100%) rotate(360deg);
+    }
+    100% {
+      transform: translate(0) rotate(0);
+    }
+  }
+.why-prevent{
+      padding: 160px 0;
+      @include  for-md{
+        padding: 60px 0;
+     }
+      &__subhead{
+          margin-bottom: 15px;
+          text-align: center;
+          color: $DarkTeal;
+      }
+      &__title{
+          
+          margin-bottom: 82px;
+          text-align: center;
+      }
+      &__item{
+          display: flex;
+          .icon{
+              width: 48px;
+              height: 48px;
+              stroke: $MedGrey;
+              fill: $MedGrey;
+              @include for-sm(){
+                width: 30px;
+                height: 30px;
+            }
+          }
+          
+      }
+      &__item + &__item{
+          margin-top: 59px;
+          @include  for-md{
+            margin-top: 40px;
+         }
+      }
+      &__item-icon-container{
+          margin-right: 48px;
+          @include for-sm(){
+            margin-right: 20px;
+        }
+      }
+      &__item-title{
+          margin-top: 10px;
+          margin-bottom: 24px;
+          @include  for-md{
+            margin-bottom: 15px;
+         }
+      }
+      &__item-text{
+        color: $black;
+      }
+      &__img-container{
+          height: 642px;
+          position: relative;
+          overflow: hidden;
+          @include for-md{
+              display: none;
+          }
+          @include for-lit-desktop{
+              height: 600px;
+          }
+      }
+      &__img{
+          width: 100%;
+          height: 100%;
+          display: block;
+          
+      }
+}
+.checkmarks{
+    padding: 160px 0;
+    margin-bottom: 66px;
+    background-color: $black;
+    border-radius: 8px;
+    @include  for-md{
+        padding: 90px 0;
+     }
+    &__item-icon-container{
+        padding-bottom: 24px;
+        @include  for-md{
+            padding-bottom: 10px;
+         }
+    }
+    .icon{
+        width: 48px;
+        height: 48px;
+        fill: $LightTeal;
+        stroke: $LightTeal;
+        @include  for-md{
+            display: block;
+            margin: 0 auto;
+         }
+    }
+    &__item-text{
+        color: $white;
+        @include  for-md{
+            text-align: center;
+         }
+    }
+}
+.price{
+    padding: 146px 0 98px;
+    background-color: $bg;
+    border-radius: 8px;
+    @include  for-md{
+        padding: 60px 0;
+     }
+    &__subhead{
+        text-align: center;
+        color: $DarkTeal;
+    }
+    &__title{
+        margin-top: 50px;
+        margin-bottom: 46px;
+        text-align: center;
+    }
+    &__exerpt{
+        margin-bottom: 80px;
+        text-align: center;
+        @include  for-md{
+           margin-bottom: 40px;
+        }
+    }
+    &__item{
+        padding: 80px;
+        background-color: $white;
+        box-shadow: 0px 2px 4px rgba(87, 100, 115, 0.1);
+        border-radius: 8px;
+        transition: .3s;
+        &:hover{
+            box-shadow: 0px 16px 24px rgba(87, 100, 115, 0.1), inset 0px 4px 0px #00D1DE;
+        }
+        @include for-lg{
+            padding: 60px 50px;
+        }
+        @include  for-md{
+            max-width: 456px;
+            
+            margin: 0 auto 20px;
+        }
+        @include for-sm(){
+            padding: 40px;
+        }
+        @include  for-md-mob{
+            padding: 20px;
+        }
+    }
+    &__item-subtitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 48px;
+        .icon{
+            margin-right: 16px;
+            width: 28px;
+            height: 28px;
+            fill: $MedGrey;
+            stroke: $MedGrey;
+            @include for-sm(){
+                margin-right: 8px;
+            }
+        }
+        @include for-sm(){
+            margin-bottom: 28px;
+        }
+        
+    }
+    &__item-text{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 48px;
+        h1{
+            margin: 0;
+        }
+        &--month{
+            margin-top: 14px;
+        }
+        @include for-sm(){
+            margin-bottom: 28px;
+        }
+    }
+    &__item-exerpt{
+        margin-bottom: 48px;
+        text-align: center;
+        @include for-sm(){
+            margin-bottom: 28px;
+        }
+    }
+    &__button{
+        display: block;
+        margin: 0 auto;
+        padding: 14px 36px;
+        transition: .3s;
+        &:hover{
+            background-color: $DarkTeal;
+        }
+        @include for-lg{
+            padding: 14px 16px;
+        }
+        @include for-sm(){
+            width: 100%;
+            font-size: 14px;
+            padding: 10px 14px;
+        }
+    }
+    &__hint-text{
+        margin-top: 80px;
+        text-align: center;
+        @include for-sm(){
+           margin-top: 40px;
+        }
+        @include for-md-mob{
+            margin-top: 20px;
+        }
+    }
+}
+.talk-to{
+    padding: 118px 0 120px;
+    @include for-md{
+        padding: 60px 0;
+    }
+    &__subhead{
+        margin-bottom: 48px;
+        color: $DarkTeal;
+        text-align: center;
+        @include for-sm(){
+            margin-bottom: 20px;
+        }
+    }
+    &__title{
+        margin-bottom: 80px;
+        text-align: center;
+        @include for-sm(){
+           margin-bottom: 40px;
+        }
+    }
+    &__item{
+        @include  for-md{
+            margin-bottom: 40px;
+         }
+    }
+    &__item-img-container{
+        margin-bottom: 24px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        position: relative;
+        @include for-sm(){
+            margin: 0 auto 24px;
+        }
+    }
+    &__item-img{
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    &__item-name{
+        margin-bottom: 24px;
+        @include for-sm(){
+            text-align: center;
+        }
+    }
+    &__item-hint-text{
+        margin-bottom: 24px;
+    }
+    &__item-text{
+        display: flex;
+        flex-direction: column;
+        .icon{
+            margin-bottom: 11.63px;
+            width: 16px;
+            height: 12.37px;
+        }
+    }
+    &__button{
+        display: block;
+        max-width: 196px;
+        box-sizing: border-box;
+        margin: 72px auto 0;
+        background-color: $white;
+        color: $darkGrey;
+        border-color: $LightGrey;
+        box-shadow: 0px 8px 16px rgba(87, 100, 115, 0.1);
+        
+        &:hover{
+            border-color: $LightTeal;
+            color: $LightTeal;
+        }
+        @include for-sm(){
+            margin: 30px auto 0;
+        }
+    }
+}
+.health{
+    padding: 164px 0 194px;
+    background-image: url(../images/backgrounds/health.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 8px;
+    @include for-sm(){
+        padding: 70px 0;
+    }
+    &__title{
+        margin-bottom: 26px;
+        color: $white;
+    }
+    &__exerpt{
+        margin-bottom: 48px;
+        color: $white;
+    }
+    &__button{
+        &:hover{
+            background-color: $white;
+            border-color: $LightTeal;
+            color: $LightTeal;
+        }
+        @include for-sm(){
+            width: 100%;
+        }
+    }
+    
+}
+.supplies{
+    position: relative;
+    padding: 80px 0 139px;
+
+
+    .container > h3{
+        margin-bottom: 48px;
+    }
+
+    @include for-md{
+        padding: 80px 0;
+    }
+    &__nav{
+        display: flex;
+        padding: 24px 24px 1px;
+        margin: 0 auto;
+        justify-content: space-between;
+        max-width: 692px;
+        box-shadow: inset 0px 1px 0px $LightGrey, inset 0px -1px 0px $LightGrey;
+        @include for-tiny-tablet{
+            padding: 18px 18px 1px;
+            overflow-x: scroll;
+        }
+    }
+    &__nav-link{
+        position: relative;
+        padding-bottom: 22px;
+        text-decoration: none;
+        transition: .3s;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: $LightTeal;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: .3s;
+        }
+        &:hover{
+            color: $LightTeal;
+            &::before{
+                width: calc(100% + 48px);
+            }
+            
+        }
+        @include for-tiny-tablet{
+            padding: 0 20px 18px;
+        }
+
+    }
+    &__item{
+        margin: 0 auto;
+    }
+    &__nav-link.active{
+        &::before{
+           
+            width: calc(100% + 48px);
+        }
+    }
+    &__main-container{
+        padding-top: 80px;
+    }
+    
+    &__link-container{
+        margin-top: -18px;
+        text-align: center;
+    }
+    &__link{
+        box-sizing: border-box;
+        
+    }
+    
+}
+.supplies-item{
+    max-width: 264px;
+    text-align: center;
+    
+    &__title{
+        display: block;
+        margin-bottom: 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        transition: .3s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__img-container{
+        display: block;
+        position: relative;
+        margin-bottom: 24px;
+        overflow: hidden;
+        height: 356px;
+        width: 100%;
+    }
+    &__img{
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        background-color: $bg;
+        object-fit: cover;
+    }
+    &__price{
+        &--old{
+            padding-right: 3px;
+            font-size: 18px;
+            line-height: 22px;
+            text-decoration-line: line-through;
+            color: $MedGrey;
+        }
+    }
+    &__deal{
+        position: absolute;
+        padding: 4px 20px;
+        width: 149px;
+        background-color: $LightTeal;
+        box-shadow: 0px 8px 16px rgba(0, 209, 222, 0.25);
+        border-radius: 8px;
+        color: $white;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.swiper-nav{
+    position: relative;
+    height: 360px;
+    .swiper-container{
+        height: 100%;
+    }
+    @include for-md(){
+        width: 100%;
+    }
+
+    @include for-extra-sm(){
+        height: 200px;
+    }
+
+  
+    &__img{
+        width: 100%;
+        max-width: 72px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        border: 2px solid transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        transition: .3s;
+        @include for-md(){
+            max-width: 100%;
+        }
+
+       
+    }
+
+    &__img.swiper-slide-thumb-active{
+        border-color: $LightTeal;
+    }
+
+    &__button{
+        height: 72px;
+        margin-top: 24px;
+        width: 100%;
+        max-width: 72px;
+        padding: 0 8px 8px 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 24px auto 0;
+
+        background: url(../images/scroll-to-last-bg.svg) no-repeat center center;
+        background-size: contain;
+
+        &:before{
+            content: '+';
+        }
+    }
+}
+.gallery{
+
+    &__img{
+        max-width: 100%;
+        width: 100%;
+        height: 614px;
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include for-md(){
+            height: 450px;
+        }
+       
+        @include for-extra-sm(){
+            height: 300px;
+        }
+    }
+}
+.card{
+    padding-top: 80px;
+    @include for-md(){
+        padding-top: 40px;
+    }
+}
+.card-info{
+    .subhead{
+        margin-bottom: 24px;
+
+        @include for-md(){
+            margin-bottom: 12px;
+        }
+    }
+    &__coast{
+        font-size: 24px;
+        line-height: 28px;
+        color: $black;
+        font-weight: 500;
+        margin-top: 48px;
+
+        @include for-md(){
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 24px;
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        margin: 48px 0;
+
+        @include for-md(){
+            margin: 24px 0;
+        }
+        @include for-extra-sm(){
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    &__button{
+        @include for-extra-sm(){
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    &__input{
+        height: 56px;
+        width: 56px;
+        border-radius: 8px;
+        background-color: $white;
+        border: 1px solid $LightGrey;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+        flex-shrink: 0;
+        margin: 0 24px 0 16px;
+
+        &::placeholder{
+            color: $darkGrey;
+        }
+        
+        @include for-extra-sm(){
+            margin: 0;
+        }
+    }
+    ul{
+        margin-top: 24px;
+
+        li{
+            box-sizing: border-box;
+            position: relative;
+            padding-left: 32px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $darkGrey;
+
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 1px;
+                height: 24px;
+                width: 24px;
+                background: url(../images/icons/Check-teal.svg) no-repeat center center;
+                background-size: contain;
+            }
+        }
+        li + li{
+            margin-top: 8px;
+        }
+    }
+}
+
+.basket-btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &__icon{
+        height: 24px;
+        width: 24px;
+        flex-shrink: 0;
+        margin-right: 8px;
+        stroke: $black;
+
+        &--white{
+            stroke: $white;
+        }
+    }
+    &__value{
+        height: 24px;
+        width: 24px;
+        font-size: 14px;
+        line-height:24px;
+        font-weight: 500;
+        color: $white;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $LightTeal;
+    }
+}
+.entry-content{
+    padding-bottom: 120px;
+}
+table{
+    width: 100%;
+}
+.product-remove{
+    a{
+        font-size: 0;
+        display: block;
+        height: 16px;
+        width: 16px;
+        background: url(../images/icons/delete-icon.svg) no-repeat center center;
+        background-size: contain;
+    }
+}
+
+.shop_table {
+    thead{
+        th{
+            font-size: 0;
+            padding-top: 60px;
+            background-color: #EFF2F4;
+
+            &:first-child{
+                border-top-left-radius: 8px;
+            }
+            &:last-child{
+                border-top-right-radius: 8px;
+            }
+
+        }
+    }
+    tbody{
+        .woocommerce-cart-form__cart-item{
+
+            @include for-sm(){
+                display: flex;
+                width: 100%;
+                justify-content: space-evenly;
+                padding: 20px 0;
+                align-items: center;
+                position: relative;
+                flex-wrap: wrap;
+                
+            }
+            td{
+                padding-top: 14px;
+                padding-bottom: 14px;
+
+                @include for-sm(){
+                   padding-top: 0;
+                   padding-bottom: 0;
+                }
+            }
+            td:first-child{
+                padding-left: 30px;
+                @include for-sm(){
+                    padding-left: 0;
+                }
+            }
+            td:last-child{
+                padding-right: 30px;
+                @include for-sm(){
+                    padding-right: 0;
+                }
+            }
+        }
+        .woocommerce-cart-form__cart-item:nth-child(even){
+
+            @include for-sm(){
+                background-color: #EFF2F4;
+               
+            }
+            td{
+                 background-color: #EFF2F4;
+
+                 @include for-sm(){
+                     background-color: transparent;
+                 }
+            }
+        }
+        .product-name{
+            @include for-sm(){
+                width: 100%;
+                text-align: center;
+                margin: 20px 0;
+            }
+           a{
+            font-size: 16px;
+            line-height: 24px;
+            color: $DarkTeal;
+            text-decoration: none;
+           }
+        }
+        .product-remove{
+            @include for-sm(){
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+        }
+        .product-quantity{
+            p{
+                display: none;
+            }
+            input{
+                width: 74px;
+            }
+        }
+        .woocommerce-Price-amount{
+            font-size: 16px;
+            line-height: 24px;
+            color: #0E1F33;
+        }
+        .product-thumbnail{
+            a{
+                height: 72px;
+                width: 72px;
+                border-radius: 8px;
+
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 48px 0;
+    padding-right: 93px;
+    box-sizing: border-box;
+
+    @include for-md(){
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .button{
+        @include for-tiny-mob(){
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
+.coupon{
+    display: flex;
+    flex-wrap: wrap;
+    @include for-md(){
+        margin-bottom: 20px;
+    }
+
+    @include for-tiny-mob(){
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .button{
+        position: relative;
+        z-index: 10;
+        margin-left: -180px;
+        @include for-tiny-mob(){
+            margin: 20px auto 0;
+            width: 100%;
+        }
+    }
+
+   label{
+       display: none;
+   }
+   input{
+       width: 456px;
+       background-color: $white;
+       height: 56px;
+       border-radius: 100px;
+       padding: 0 200px 0 24px;
+       font-size: 18px;
+       line-height: 24px;
+
+       &::placeholder{
+           color: #576473;
+       }
+
+       @include for-tiny-mob(){
+           width: 100%;
+       }
+   }
+}
+.cart-collaterals{
+    display: flex;
+    justify-content: flex-end;
+
+    .button{
+        margin-top: 16px;
+        margin-left: auto;
+
+        
+    }
+    
+}
+
+.cart_totals {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    max-width: 320px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .wc-proceed-to-checkout{
+        margin-left: auto;
+    }
+    table{
+        display: block;
+        max-width: 166px;
+
+        tr{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    tbody{
+        display: flex;
+        flex-direction: column;
+    }
+    th{
+        color: #576473;
+    }
+    td{
+        font-size: 18px;
+        color: #0E1F33;
+        font-weight: 500;
+    }
+}
+.login-form{
+   h1,h2,h3{
+        text-align: center;
+   }
+   h3{
+       margin: -30px -100px 46px;
+       @include for-md(){
+           margin: -30px 0 23px;
+       }
+   }
+    h2{
+        margin-bottom: 39px;
+    }
+   
+    input{
+        width: 100%;
+    }
+    label{
+        color: #576473;
+        text-align: left;
+    }
+    p+p{
+        margin-top: 20px;
+    }
+    .button{
+        width: 100%;
+    }
+    .lost_password{
+        color: $fullBlack;
+        font-weight: 500;
+        margin-left: -20px;
+        text-align: center;
+        margin-right: -20px;
+        @include for-sm(){
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .woocommerce-form-register__submit{
+        display: block;
+        max-width: 219px;
+        margin: 30px auto 22px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+}
+.entry-content{
+    a{
+        color: #00D1DE;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+.required{
+    color: #EE5265;
+}
+
+.checkout{
+    .woocommerce-billing-fields__field-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-row{
+        width: 48%;
+        margin-bottom: 20px;
+        input{
+            width: 100%;
+        }
+    }
+}

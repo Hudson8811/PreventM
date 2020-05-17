@@ -1,0 +1,49 @@
+$white:#fff;
+$LightRose:#EE5265;
+$DarkRose:#DB325B;
+$LightTeal:#00D1DE;
+$DarkTeal:#00839F;
+$black:#0E1F33;
+$fullBlack:#000;
+$darkGrey:#576473;
+$MedGrey:#98A5B3;
+$LightGrey:#E0E5EA;
+$turquoise:#BFE7F3;
+$bg:#EFF2F4;
+
+@mixin for-xl {
+    @media (max-width: 1300px) { @content; }
+  }
+
+
+@mixin for-lg {
+    @media (max-width: 1130px) { @content; }
+  }
+  @mixin for-lit-desktop {
+    @media (max-width: 1050px) { @content; }
+  }
+  @mixin for-md {
+    @media (max-width: 991px) { @content; }
+  }
+  @mixin for-sm {
+    @media (max-width: 767px) { @content; }
+  }
+  @mixin for-extra-sm {
+    @media (max-width: 576px) { @content; }
+  }
+  @mixin for-tiny-tablet {
+    @media (max-width: 650px) { @content; }
+  }
+  @mixin for-md-mob{
+    @media (max-width: 550px) { @content; }
+  }
+  @mixin for-tiny-mob {
+    @media (max-width: 500px) { @content; }
+  }
+
+  @mixin for-min-mob {
+    @media (min-width: 650px) { @content; }
+  }
+  @mixin for-lit-mob {
+    @media (max-width: 350px) { @content; }
+    }
