@@ -2327,7 +2327,12 @@ table{
         text-align: center;
     }
 }
+table{
+    border-spacing: 0;
+}
 .entry-content{
+
+   
     a{
         color: #00D1DE;
         font-weight: 500;
@@ -2351,4 +2356,155 @@ table{
             width: 100%;
         }
     }
+
+    .place-order{
+        margin-top: 20px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 14px;
+        color: $fullBlack;
+    }
+    #place_order{
+        margin-top: 20px;
+    }
 }
+
+.checkout-heading{
+    margin-bottom: 17px;
+}
+.woocommerce-info{
+    color: $black;
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+.showcoupon{
+    text-decoration: none;
+    color: $LightTeal;
+    font-weight: 500;
+}
+.checkbox {
+    font-size: 9px;
+    line-height: 12px;
+    color: $fullBlack;
+}
+.checkout .form-row input[type="checkbox"]{
+    height: 10px;
+    width: 10px;
+    background-color: #C4C4C4;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.select2-container .select2-selection--single{
+    height: 43px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    font-size: 10px;
+    line-height: 43px;
+    color: #576473;
+    background-color: $bg;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    width: 10px;
+    height: 5px;
+    background: url(../images/icons/arrow-select.svg);
+    border: none;
+    margin-top: -2.5px;
+    border-color: transparent;
+}
+
+.order_comments{
+    display: block;
+    width: 100%;
+    height: 103px;
+    resize: none;
+    background-color: $bg;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 14px;
+    border-radius: 8px;
+}
+.checkout_coupon {
+    margin-bottom: 20px;
+    .form-row{
+        display: inline-block;
+
+        @include for-sm(){
+            display: block;
+        }
+     
+        .input-text{
+            width: 400px;
+            height: 56px;
+            padding-right: 120px;
+            border-radius: 100px;
+
+            @include for-sm(){
+                width: 100%;
+                display: block;
+                max-width: 320px;
+                padding: 0 24px;
+            }
+        }
+        .button{
+            margin-left: -100px;
+
+            @include for-sm(){
+                display: block;
+                max-width: 320px;
+                width: 100%;
+                margin: 10px auto 0;
+            }
+        }
+     }
+}
+
+#order_review{
+    .shop_table thead th{
+       
+        padding: 19px 25px;
+        
+    }
+    th{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        font-weight: 400;
+        padding: 15px 25px;
+    }
+    td{
+        padding: 15px 25px;
+    }
+}
+
+input[type="radio"]{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-top: -1px;
+}
+
+.product-name{
+    color: $LightTeal;
+
+    .product-quantity{
+        color: $black
+    }
+}
+
+.order-total,.cart-subtotal{
+    th{
+        color: $darkGrey
+    }
+    td{
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        color: $LightRose;
+    }
+}
+

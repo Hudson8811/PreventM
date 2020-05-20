@@ -39,218 +39,218 @@
         </header>
         <!--end header-->
 
-        <main class="main" id="main">
-           
+		<main class="main" id="main">
+
+
+		
+			<article id="post-9" class="post-9 page type-page status-publish hentry">
+			
 				
-            <div class="container">
-              
-				<article id="post-9" class="post-9 page type-page status-publish hentry">
-					<header class="entry-header">
-						<h1 class="entry-title">Checkout</h1>	</header><!-- .entry-header -->
-
-					
-					<div class="entry-content">
-						<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div><div class="woocommerce-form-login-toggle">
-					
-					<div class="woocommerce-info">
-						Already have an account?  <a href="#" class="showlogin">log in</a>	</div>
-				</div>
-				<form class="woocommerce-form woocommerce-form-login login" method="post" style="display:none;">
-
-					
-					<p>Если вы уже оформляли заказ на нашем сайте, пожалуйста, введите свои данные ниже. Если вы являетесь новым клиентом, пожалуйста, заполните платёжные данные в соответствующем разделе.</p>
-
-					<p class="form-row form-row-first">
-						<label for="username">Имя пользователя или электронная почта&nbsp;<span class="required">*</span></label>
-						<input type="text" class="input-text" name="username" id="username" autocomplete="username">
-					</p>
-					<p class="form-row form-row-last">
-						<label for="password">Пароль&nbsp;<span class="required">*</span></label>
-						<input class="input-text" type="password" name="password" id="password" autocomplete="current-password">
-					</p>
-					<div class="clear"></div>
-
-					
-					<p class="form-row">
-						<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-							<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Запомнить меня</span>
-						</label>
-						<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="0859cb0703"><input type="hidden" name="_wp_http_referer" value="/pervent/checkout/">		<input type="hidden" name="redirect" value="http://localhost/pervent/checkout/">
-						<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Авторизация">Авторизация</button>
-					</p>
-					<p class="lost_password">
-						<a href="http://localhost/pervent/my-account/lost-password/">Забыли свой пароль?</a>
-					</p>
-
-					<div class="clear"></div>
-
-					
-				</form>
+					<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
+			<div class="container">
+				<h2 class="checkout-heading">Checkout</h2>
+			
 				<div class="woocommerce-form-coupon-toggle">
-					
-					<div class="woocommerce-info">
-						У вас есть купон? <a href="#" class="showcoupon">Нажмите здесь для введения кода</a>	</div>
-				</div>
-
-				<form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
-
-					<p>Если у вас есть код купона, примените его ниже.</p>
-
-					<p class="form-row form-row-first">
-						<input type="text" name="coupon_code" class="input-text" placeholder="Код купона" id="coupon_code" value="">
-					</p>
-
-					<p class="form-row form-row-last">
-						<button type="submit" class="button" name="apply_coupon" value="Применить купон">Применить купон</button>
-					</p>
-
-					<div class="clear"></div>
-				</form>
-				<div class="woocommerce-notices-wrapper"></div>
-				<form name="checkout" method="post" class="checkout woocommerce-checkout" action="http://localhost/pervent/checkout/" enctype="multipart/form-data" novalidate="novalidate">
-
+				
+				<div class="woocommerce-info">
+					Have a coupon? <a href="#" class="showcoupon">Click here to enter your code</a>	</div>
+			</div>
+			
+			<form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
+			
+				<p>If you have a coupon code, please apply it below.</p>
+			
+				<p class="form-row form-row-first">
+					<input type="text" name="coupon_code" class="input-text" placeholder="Coupon code" id="coupon_code" value="">
+				</p>
+			
+				<p class="form-row form-row-last">
+					<button type="submit" class="button button--theme-teal" name="apply_coupon" value="Apply coupon">Apply coupon</button>
+				</p>
+			
+				<div class="clear"></div>
+			</form>
+			<div class="woocommerce-notices-wrapper"></div>    <form name="checkout" method="post" class="checkout woocommerce-checkout" action="http://s22485.h5.modhost.pro/checkout/" enctype="multipart/form-data" novalidate="novalidate">
+			
 					
 						
-						<div class="col2-set" id="customer_details">
+						<div class="col2-set row" id="customer_details">
 							<div class="col-md-6">
 								<div class="woocommerce-billing-fields">
-					
-						<h3>Детали оплаты</h3>
-
-					
-					
-					<div class="woocommerce-billing-fields__field-wrapper">
-							<p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10"><label for="billing_first_name" class="">Имя&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name"></span></p><p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20"><label for="billing_last_name" class="">Фамилия&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name"></span></p><p class="form-row form-row-wide" id="billing_company_field" data-priority="30"><label for="billing_company" class="">Название компании&nbsp;<span class="optional">(необязательно)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization"></span></p><p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field" data-priority="40"><label for="billing_country" class="">Страна/регион&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_country" id="billing_country" class="country_to_state country_select select2-hidden-accessible" autocomplete="country" tabindex="-1" aria-hidden="true"><option value="">Выберите страну/регион...</option><option value="AF" selected="selected">Афганистан</option><option value="ME">Черногория</option><option value="MQ">Мартиника</option><option value="MR">Мавритания</option><option value="MU">Маврикий</option><option value="YT">Майотта</option><option value="MX">Мексика</option><option value="FM">Микронезия</option><option value="MD">Молдова</option><option value="MC">Монако</option><option value="MN">Монголия</option><option value="MS">Монсеррат</option><option value="ML">Мали</option><option value="MA">Марокко</option><option value="MZ">Мозамбик</option><option value="MM">Мьянма</option><option value="NA">Намибия</option><option value="NR">Науру</option><option value="NP">Непал</option><option value="NL">Нидерланды</option><option value="NI">Никарагуа</option><option value="NE">Нигер</option><option value="NG">Нигерия</option><option value="MT">Мальта</option><option value="MV">Мальдивы</option><option value="NO">Норвегия</option><option value="KG">Кыргызстан</option><option value="IL">Израиль</option><option value="IT">Италия</option><option value="JM">Ямайка</option><option value="JP">Япония</option><option value="JE">Джерси</option><option value="JO">Иордания</option><option value="KZ">Казахстан</option><option value="KE">Кения</option><option value="KI">Кирибати</option><option value="KW">Кувейт</option><option value="LA">Лаос</option><option value="MY">Малайзия</option><option value="LV">Латвия</option><option value="LB">Ливан</option><option value="LS">Лесото</option><option value="LR">Либерия</option><option value="LI">Лихтенштейн</option><option value="LT">Литва</option><option value="LU">Люксембург</option><option value="MO">Макао</option><option value="MG">Мадагаскар</option><option value="MW">Малави</option><option value="NU">Ниуэ</option><option value="OM">Оман</option><option value="IQ">Ирак</option><option value="UG">Уганда</option><option value="TJ">Таджикистан</option><option value="TZ">Танзания</option><option value="TH">Тайланд</option><option value="TG">Того</option><option value="TK">Токелау</option><option value="TO">Тонга</option><option value="TN">Тунис</option><option value="TR">Турция</option><option value="TM">Туркменистан</option><option value="TV">Тувалу</option><option value="UA">Украина</option><option value="SY">Сирия</option><option value="GB">Великобритания</option><option value="UY">Уругвай</option><option value="UZ">Узбекистан</option><option value="VU">Вануату</option><option value="VA">Ватикан</option><option value="VE">Венесуэла</option><option value="VN">Вьетнам</option><option value="WS">Самоа</option><option value="YE">Йемен</option><option value="ZM">Замбия</option><option value="TW">Тайвань</option><option value="CH">Швейцария</option><option value="PK">Пакистан</option><option value="RU">Россия</option><option value="PA">Панама</option><option value="PY">Парагвай</option><option value="PE">Перу</option><option value="PH">Филиппины</option><option value="PN">Питкэрн</option><option value="PL">Польша</option><option value="PT">Португалия</option><option value="QA">Катар</option><option value="RE">Реюньон</option><option value="RO">Румыния</option><option value="RW">Руанда</option><option value="SE">Швеция</option><option value="SN">Сенегал</option><option value="RS">Сербия</option><option value="SG">Сингапур</option><option value="SK">Словакия</option><option value="SI">Словения</option><option value="SO">Сомали</option><option value="ES">Испания</option><option value="SD">Судан</option><option value="SR">Суринам</option><option value="SZ">Свазиленд</option><option value="IE">Ирландия</option><option value="LY">Ливия</option><option value="IR">Иран</option><option value="CA">Канада</option><option value="BO">Боливия</option><option value="BW">Ботсвана</option><option value="BR">Бразилия</option><option value="BN">Бруней</option><option value="BG">Болгария</option><option value="BI">Бурунди</option><option value="KH">Камбоджа</option><option value="CM">Камерун</option><option value="ID">Индонезия</option><option value="BM">Бермуды</option><option value="TD">Чад</option><option value="CL">Чили</option><option value="CN">Китай</option><option value="CO">Колумбия</option><option value="KM">Коморы</option><option value="HR">Хорватия</option><option value="CU">Куба</option><option value="CW">Кюрасао</option><option value="CY">Кипр</option><option value="BT">Бутан</option><option value="BJ">Бенин</option><option value="DJ">Джибути</option><option value="AW">Аруба</option><option value="AL">Албания</option><option value="DZ">Алжир</option><option value="AD">Андорра</option><option value="AO">Ангола</option><option value="AI">Ангилья</option><option value="AQ">Антарктика</option><option value="AR">Аргентина</option><option value="AM">Армения</option><option value="AU">Австралия</option><option value="BZ">Белиз</option><option value="AT">Австрия</option><option value="AZ">Азербайджан</option><option value="BS">Багамы</option><option value="BH">Бахрейн</option><option value="BD">Бангладеш</option><option value="BB">Барбадос</option><option value="BY">Беларусь</option><option value="BE">Бельгия</option><option value="PW">Палау</option><option value="DK">Дания</option><option value="ZW">Зимбабве</option><option value="DM">Доминика</option><option value="GM">Гамбия</option><option value="FR">Франция</option><option value="IS">Исландия</option><option value="HU">Венгрия</option><option value="GU">Гуам</option><option value="HN">Гондурас</option><option value="HT">Гаити</option><option value="GY">Гайана</option><option value="GA">Габон</option><option value="GN">Гвинея</option><option value="FJ">Фиджи</option><option value="GG">Гернси</option><option value="GT">Гватемала</option><option value="GE">Грузия</option><option value="DE">Германия</option><option value="GH">Гана</option><option value="GI">Гибралтар</option><option value="GR">Греция</option><option value="GL">Гренландия</option><option value="GD">Гренада</option><option value="FI">Финляндия</option><option value="HK">Гонконг</option><option value="GP">Гваделупа</option><option value="SV">Сальвадор</option><option value="IN">Индия</option><option value="EE">Эстония</option><option value="ET">Эфиопия</option><option value="ER">Эритрея</option><option value="EC">Эквадор</option><option value="EG">Египет</option><option value="SB">Соломоновы Острова</option><option value="NF">Остров Норфолк</option><option value="ZA">Южная Африка</option><option value="CK">Острова Кука</option><option value="KR">Южная Корея</option><option value="SS">Южный Судан</option><option value="BV">Остров Буве</option><option value="AX">Аландские острова</option><option value="MK">Северная Македония</option><option value="TL">Восточный Тимор</option><option value="FO">Фарерские острова</option><option value="GQ">Экваториальная Гвинея</option><option value="CZ">Чешская Республика</option><option value="NZ">Новая Зеландия</option><option value="NC">Новая Каледония</option><option value="DO">Доминиканская Республика</option><option value="FK">Фолклендские острова</option><option value="GF">Французская Гвиана</option><option value="SC">Сейшельские Острова</option><option value="KP">Северная Корея</option><option value="PF">Французская Полинезия</option><option value="SA">Саудовская Аравия</option><option value="IM">Остров Мэн</option><option value="CX">Остров Рождества</option><option value="AS">Американское Самоа</option><option value="KY">Кайманские острова</option><option value="PS">Палестинские территории</option><option value="MH">Маршалловы острова</option><option value="EH">Западная Сахара</option><option value="TC">Теркс и Кайкос</option><option value="CF">Центральная Африканская Республика</option><option value="WF">Уоллис и Футуна</option><option value="VG">Британские Виргинские острова</option><option value="BA">Босния и Герцеговина</option><option value="SH">Остров Святой Елены</option><option value="TT">Тринидад и Тобаго</option><option value="MP">Северные Марианские острова</option><option value="AG">Антигуа и Барбуда</option><option value="US">Соединённые Штаты Америки</option><option value="AE">Объединённые Арабские Эмираты</option><option value="TF">Французские южные территории</option><option value="UM">Внешние малые острова США</option><option value="IO">Британская территория Индийского океана</option><option value="HM">Остров Херд и острова Макдональд</option><option value="VI">Виргинские острова (США)</option><option value="SJ">Шпицберген и Ян-Майен</option><option value="CD">Конго (Киншаса)</option><option value="CG">Конго (Браззавиль)</option><option value="CC">Кокосовые (Килинг) острова</option><option value="PG">Папуа — Новая Гвинея</option><option value="GS">Южная Георгия/Сандвичевы острова</option><option value="BQ">Бонэйр, Синт-Эстатиус и Саба</option><option value="CR">Коста-Рика</option><option value="CV">Кабо-Верде</option><option value="BL">Сен-Бартелеми</option><option value="LC">Сент-Люсия</option><option value="PR">Пуэрто-Рико</option><option value="SM">Сан-Марино</option><option value="BF">Буркина-Фасо</option><option value="GW">Гвинея-Бисау</option><option value="SL">Сьерра-Леоне</option><option value="LK">Шри-Ланка</option><option value="KN">Сент-Китс и Невис</option><option value="PM">Сен-Пьер и Микелон</option><option value="VC">Сент-Винсент и Гренадины</option><option value="ST">Сан-Томе и Принсипи</option><option value="SX">Сен-Мартен (голландская часть)</option><option value="MF">Сен-Мартен (французская часть)</option><option value="CI">Кот-д'Ивуар</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_country-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_country-container" role="textbox" aria-readonly="true" title="Афганистан">Афганистан</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><noscript><button type="submit" name="woocommerce_checkout_update_totals" value="Обновить страну/регион">Обновить страну/регион</button></noscript></span></p><p class="form-row form-row-wide address-field validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="">Адрес&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="Номер дома и название улицы" value="" autocomplete="address-line1" data-placeholder="Номер дома и название улицы"></span></p><p class="form-row form-row-wide address-field" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text">Квартира, апартаменты, жилое помещение и т. д. (необязательно)&nbsp;<span class="optional">(необязательно)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="Квартира, апартаменты, жилое помещение и т. д. (необязательно)" value="" autocomplete="address-line2" data-placeholder="Квартира, апартаменты, жилое помещение и т. д. (необязательно)"></span></p><p class="form-row form-row-wide address-field validate-required" id="billing_city_field" data-priority="70" data-o_class="form-row form-row-wide address-field validate-required"><label for="billing_city" class="">Населённый пункт&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" value="" autocomplete="address-level2"></span></p><p class="form-row form-row-wide address-field validate-state" id="billing_state_field" style="display: none" data-o_class="form-row form-row-wide address-field validate-state"><label for="billing_state" class="">Область / район&nbsp;<span class="optional">(необязательно)</span></label><span class="woocommerce-input-wrapper"><input type="hidden" id="billing_state" name="billing_state" placeholder="" data-input-classes="" class="hidden"></span></p><p class="form-row form-row-wide address-field validate-required validate-postcode" id="billing_postcode_field" data-priority="90" data-o_class="form-row form-row-wide address-field validate-required validate-postcode"><label for="billing_postcode" class="">Почтовый индекс&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_postcode" id="billing_postcode" placeholder="" value="" autocomplete="postal-code"></span></p><p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" data-priority="100"><label for="billing_phone" class="">Телефон&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="" autocomplete="tel"></span></p><p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" data-priority="110"><label for="billing_email" class="">Email&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="" autocomplete="email username"></span></p></div>
-
-					</div>
-
-					<div class="woocommerce-account-fields">
-						
-						
-						
-							<div class="create-account">
-													<p class="form-row validate-required" id="account_password_field" data-priority=""><label for="account_password" class="">Создать пароль учетной записи&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="password" class="input-text " name="account_password" id="account_password" placeholder="Пароль" value=""></span></p>								<div class="clear"></div>
-							</div>
-
-						
-							</div>
-							</div>
-
-							<div class="col-md-6">
+				
+				
+				<div class="woocommerce-billing-fields__field-wrapper">
+						<p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" data-priority="3"><label for="billing_email" class="">Email address&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="nikita.elagin2012@yandex.ru" autocomplete="email username"></span></p><p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" data-priority="4"><label for="billing_phone" class="">Phone&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="" autocomplete="tel"></span></p><p class="form-row form-row-wide address-field form-row-full-width checkout-phone-or-email" id="billing_ageee_chb_field" data-priority="5"><span class="woocommerce-input-wrapper"><label class="checkbox ">
+									<input type="checkbox" class="input-checkbox " name="billing_ageee_chb" id="billing_ageee_chb" value="1"> I agree to receive exclusive offers and up to date news. You can always unsubscribe.&nbsp;<span class="optional">(optional)</span></label></span></p><p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10"><label for="billing_first_name" class="">First name&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name"></span></p><p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20"><label for="billing_last_name" class="">Last name&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name"></span></p><p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field" data-priority="30"><label for="billing_country" class="">Country&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_country" id="billing_country" class="country_to_state country_select select2-hidden-accessible" autocomplete="country" tabindex="-1" aria-hidden="true"><option value="">Select a country / region…</option><option value="AX">Åland Islands</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="PW">Belau</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BQ">Bonaire, Saint Eustatius and Saba</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo (Brazzaville)</option><option value="CD">Congo (Kinshasa)</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curaçao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="KP">North Korea</option><option value="MK">North Macedonia</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PS">Palestinian Territory</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="ST">São Tomé and Príncipe</option><option value="BL">Saint Barthélemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="SX">Saint Martin (Dutch part)</option><option value="MF">Saint Martin (French part)</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia/Sandwich Islands</option><option value="KR">South Korea</option><option value="SS">South Sudan</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom (UK)</option><option value="US" selected="selected">United States (US)</option><option value="UM">United States (US) Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="VG">Virgin Islands (British)</option><option value="VI">Virgin Islands (US)</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_country-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_country-container" role="textbox" aria-readonly="true" title="United States (US)">United States (US)</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><noscript><button type="submit" name="woocommerce_checkout_update_totals" value="Update country / region">Update country / region</button></noscript></span></p><p class="form-row form-row-wide address-field validate-required" id="billing_city_field" data-priority="40" data-o_class="form-row form-row-wide address-field validate-required"><label for="billing_city" class="">Town / City&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" value="" autocomplete="address-level2"></span></p><p class="form-row form-row-wide address-field validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="">Street address&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="House number and street name" value="" autocomplete="address-line1" data-placeholder="House number and street name"></span></p><p class="form-row form-row-wide address-field" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text">&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="Apartment, suite, unit, etc. (optional)" value="" autocomplete="address-line2" data-placeholder="Apartment, suite, unit, etc. (optional)"></span></p><p class="form-row form-row-wide address-field validate-required validate-state" id="billing_state_field" data-priority="80" data-o_class="form-row form-row-wide address-field validate-required validate-state"><label for="billing_state" class="">State&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select select2-hidden-accessible" autocomplete="address-level1" data-placeholder="Select an option…" data-input-classes="" tabindex="-1" aria-hidden="true"><option value="">Select an option…</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District Of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="AA">Armed Forces (AA)</option><option value="AE">Armed Forces (AE)</option><option value="AP">Armed Forces (AP)</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_state-container" role="combobox"><span class="select2-selection__rendered" id="select2-billing_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select an option…</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></span></p><p class="form-row form-row-wide address-field validate-required validate-postcode" id="billing_postcode_field" data-priority="90" data-o_class="form-row form-row-wide address-field validate-required validate-postcode"><label for="billing_postcode" class="">ZIP&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_postcode" id="billing_postcode" placeholder="" value="" autocomplete="postal-code"></span></p></div>
+			
+				</div>
+			
 								<div class="woocommerce-shipping-fields">
-					</div>
-				<div class="woocommerce-additional-fields">
+				</div>
+			<div class="woocommerce-additional-fields">
+				
+				
 					
+						<h3>Additional information</h3>
+			
 					
-						
-							<h3>Детали</h3>
-
-						
-						<div class="woocommerce-additional-fields__field-wrapper">
-											<p class="form-row notes" id="order_comments_field" data-priority=""><label for="order_comments" class="">Примечание к заказу&nbsp;<span class="optional">(необязательно)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="Примечания к вашему заказу, например, особые пожелания отделу доставки." rows="2" cols="5"></textarea></span></p>					</div>
-
-					
-					</div>
+					<div class="woocommerce-additional-fields__field-wrapper">
+										<p class="form-row notes" id="order_comments_field" data-priority=""><label for="order_comments" class="">Order notes&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows="2" cols="5"></textarea></span></p>					</div>
+			
+				
+				</div>
+			
 							</div>
-						</div>
-
-						
-						
-						
-					<h3 id="order_review_heading">Ваш заказ</h3>
+			
+							<div class="col-md-6">
+								
+								<h3 id="order_review_heading">Your order</h3>
+			
+								
+								<div id="order_review" class="woocommerce-checkout-review-order">
+									<table class="shop_table woocommerce-checkout-review-order-table">
+				<thead>
+					<tr>
+						<th class="product-name">Product</th>
+						<th class="product-total">Total</th>
+					</tr>
+				</thead>
+				<tbody>
+									<tr class="cart_item">
+								<td class="product-name">
+									Prevent kit&nbsp;						 <strong class="product-quantity">×&nbsp;1</strong>											</td>
+								<td class="product-total">
+									<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.00</span>					</td>
+							</tr>
+								</tbody>
+				<tfoot>
+			
+					<tr class="cart-subtotal">
+						<th>Subtotal</th>
+						<td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.00</span></td>
+					</tr>
+			
 					
 					
-					<div id="order_review" class="woocommerce-checkout-review-order">
-						<table class="shop_table woocommerce-checkout-review-order-table">
-					<thead>
-						<tr>
-							<th class="product-name">Товар</th>
-							<th class="product-total">Подытог</th>
-						</tr>
-					</thead>
-					<tbody>
-										<tr class="cart_item">
-									<td class="product-name">
-										Product 2&nbsp;						 <strong class="product-quantity">×&nbsp;4</strong>											</td>
-									<td class="product-total">
-										<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>60.00</span>					</td>
-								</tr>
-												<tr class="cart_item">
-									<td class="product-name">
-										Product 1&nbsp;						 <strong class="product-quantity">×&nbsp;1</strong>											</td>
-									<td class="product-total">
-										<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>12.00</span>					</td>
-								</tr>
-												<tr class="cart_item">
-									<td class="product-name">
-										Product 3&nbsp;						 <strong class="product-quantity">×&nbsp;1</strong>											</td>
-									<td class="product-total">
-										<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.00</span>					</td>
-								</tr>
-									</tbody>
-					<tfoot>
-
-						<tr class="cart-subtotal">
-							<th>Подытог</th>
-							<td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>87.00</span></td>
-						</tr>
-
 						
-						
-						
-						
-						
-						<tr class="order-total">
-							<th>Итого</th>
-							<td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>87.00</span></strong> </td>
-						</tr>
-
-						
-					</tfoot>
-				</table>
-
-				<div id="payment" class="woocommerce-checkout-payment">
-							<ul class="wc_payment_methods payment_methods methods">
-							<li class="wc_payment_method payment_method_paypal">
-					<input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal" checked="checked" data-order_button_text="Дальше на PayPal" style="display: none;">
-
-					<label for="payment_method_paypal">
-						PayPal <img src="http://localhost/pervent/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png" alt="Отметка о принятии PayPal"><a href="https://www.paypal.com/af/cgi-bin/webscr?cmd=xpt/Marketing/general/WIPaypal-outside" class="about_paypal" onclick="javascript:window.open('https://www.paypal.com/af/cgi-bin/webscr?cmd=xpt/Marketing/general/WIPaypal-outside','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">Что такое PayPal?</a>	</label>
-							<div class="payment_box payment_method_paypal">
-							<p>Оплата через PayPal; вы сможете произвести оплату с помощью банковской карты, если у вас нет аккаунта в системе PayPal. SANDBOX ВКЛЮЧЁН. Можно использовать только учётные записи для тестирования sandbox. Дополнительную информацию см. <a href="https://developer.paypal.com/docs/classic/lifecycle/ug_sandbox/">в руководстве по тестированию PayPal Sandbox</a>.</p>
-						</div>
-					</li>
-						</ul>
-						<div class="form-row place-order">
-						<noscript>
-							Поскольку ваш браузер не поддерживает JavaScript или в нем он отключен, просим убедиться в том, что вы нажали кнопку <em>Обновить итог</em> перед регистрацией заказа. Иначе, есть риск неправильного подсчета стоимости.			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="Обновить итог">Обновить итог</button>
-						</noscript>
-
-							<div class="woocommerce-terms-and-conditions-wrapper">
-						<div class="woocommerce-privacy-policy-text"><p>Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, описанных в нашей <a href="http://localhost/pervent/?page_id=3" class="woocommerce-privacy-policy-link" target="_blank">политика конфиденциальности</a>.</p>
-				</div>
-							</div>
+						<tr class="woocommerce-shipping-totals shipping">
+				<th>Shipping</th>
+				<td data-title="Shipping">
+								<ul id="shipping_method" class="woocommerce-shipping-methods">
+												<li>
+									<input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_free_shipping-1" value="free_shipping:1" class="shipping_method" checked="checked"><label for="shipping_method_0_free_shipping-1">Free shipping</label>					</li>
+												<li>
+									<input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate-2" value="flat_rate:2" class="shipping_method"><label for="shipping_method_0_flat_rate-2">EXPEDITED SHIPPING: <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>59.99</span></label>					</li>
+										</ul>
+									
 					
+						</td>
+			</tr>
+			
 						
-						<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Подтвердить заказ" data-value="Подтвердить заказ">Дальше на PayPal</button>
-						
-						<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="89fc5ae363"><input type="hidden" name="_wp_http_referer" value="/pervent/?wc-ajax=update_order_review">	</div>
-				</div>
-
+					
+					
+					
+					
+					<tr class="order-total">
+						<th>Total</th>
+						<td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.00</span></strong> </td>
+					</tr>
+			
+					
+				</tfoot>
+			</table>
+			
+			<div id="payment" class="woocommerce-checkout-payment">
+			
+				<h3 class="payment-info-title">Payment Information</h3>
+						<ul class="wc_payment_methods payment_methods methods">
+						<li class="wc_payment_method payment_method_paypal">
+				<input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal" checked="checked" data-order_button_text="Proceed to PayPal">
+			
+				<label for="payment_method_paypal">
+					Pay Via PayPal <img src="http://s22485.h5.modhost.pro/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png" alt="PayPal acceptance mark"><a href="https://www.paypal.com/af/cgi-bin/webscr?cmd=xpt/Marketing/general/WIPaypal-outside" class="about_paypal" onclick="javascript:window.open('https://www.paypal.com/af/cgi-bin/webscr?cmd=xpt/Marketing/general/WIPaypal-outside','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">What is PayPal?</a>	</label>
+						<div class="payment_box payment_method_paypal">
+						<p>SANDBOX ENABLED. You can use sandbox testing accounts only. See the <a href="https://developer.paypal.com/docs/classic/lifecycle/ug_sandbox/">PayPal Sandbox Testing Guide</a> for more details.</p>
 					</div>
-
+				</li>
+			<li class="wc_payment_method payment_method_stripe">
+				<input id="payment_method_stripe" type="radio" class="input-radio" name="payment_method" value="stripe" data-order_button_text="">
+			
+				<label for="payment_method_stripe">
+					Pay Via Stripe <img src="http://s22485.h5.modhost.pro/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" class="stripe-visa-icon stripe-icon" alt="Visa"><img src="http://s22485.h5.modhost.pro/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" class="stripe-amex-icon stripe-icon" alt="American Express"><img src="http://s22485.h5.modhost.pro/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" class="stripe-mastercard-icon stripe-icon" alt="Mastercard"><img src="http://s22485.h5.modhost.pro/wp-content/plugins/woocommerce-gateway-stripe/assets/images/discover.svg" class="stripe-discover-icon stripe-icon" alt="Discover"><img src="http://s22485.h5.modhost.pro/wp-content/plugins/woocommerce-gateway-stripe/assets/images/jcb.svg" class="stripe-jcb-icon stripe-icon" alt="JCB"><img src="http://s22485.h5.modhost.pro/wp-content/plugins/woocommerce-gateway-stripe/assets/images/diners.svg" class="stripe-diners-icon stripe-icon" alt="Diners">	</label>
+						<div class="payment_box payment_method_stripe" style="display:none;">
+						<div id="stripe-payment-data" data-email="nikita.elagin2012@yandex.ru" data-full-name=" " data-currency="usd"><p>TEST MODE ENABLED. In test mode, you can use the card number 4242424242424242 with any CVC and a valid expiration date or check the <a href="https://stripe.com/docs/testing" target="_blank">Testing Stripe documentation</a> for more card numbers.</p>
+					<fieldset id="wc-stripe-cc-form" class="wc-credit-card-form wc-payment-form" style="background:transparent;">
+						
+										<div class="form-row form-row-wide">
+								<label for="stripe-card-element">Card Number <span class="required">*</span></label>
+								<div class="stripe-card-group">
+									<div id="stripe-card-element" class="wc-stripe-elements-field StripeElement empty"><div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame6" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-11e8fb9366aaf24e33e33c2ea4e8f283.html#style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;componentName=cardNumber&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;apiKey=pk_test_dC8SbeNXnWQxC59OGyOux67q00z14cDjQX&amp;origin=http%3A%2F%2Fs22485.h5.modhost.pro&amp;referrer=http%3A%2F%2Fs22485.h5.modhost.pro%2Fcheckout%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 18px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div></div>
+			
+									<i class="stripe-credit-card-brand stripe-card-brand" alt="Credit Card"></i>
+								</div>
+							</div>
+			
+							<div class="form-row form-row-first">
+								<label for="stripe-exp-element">Expiry Date <span class="required">*</span></label>
+			
+								<div id="stripe-exp-element" class="wc-stripe-elements-field StripeElement empty"><div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame7" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-11e8fb9366aaf24e33e33c2ea4e8f283.html#style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;componentName=cardExpiry&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;apiKey=pk_test_dC8SbeNXnWQxC59OGyOux67q00z14cDjQX&amp;origin=http%3A%2F%2Fs22485.h5.modhost.pro&amp;referrer=http%3A%2F%2Fs22485.h5.modhost.pro%2Fcheckout%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 18px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div></div>
+							</div>
+			
+							<div class="form-row form-row-last">
+								<label for="stripe-cvc-element">Card Code (CVC) <span class="required">*</span></label>
+							<div id="stripe-cvc-element" class="wc-stripe-elements-field StripeElement empty"><div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame8" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-11e8fb9366aaf24e33e33c2ea4e8f283.html#style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][fontSize]=15px&amp;style[base][::placeholder][color]=%23CFD7E0&amp;componentName=cardCvc&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;apiKey=pk_test_dC8SbeNXnWQxC59OGyOux67q00z14cDjQX&amp;origin=http%3A%2F%2Fs22485.h5.modhost.pro&amp;referrer=http%3A%2F%2Fs22485.h5.modhost.pro%2Fcheckout%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 18px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div></div>
+							</div>
+							<div class="clear"></div>
+						
+						<!-- Used to display form errors -->
+						<div class="stripe-source-errors" role="alert"></div>
+						<br>
+									<div class="clear"></div>
+					</fieldset>
+					</div>		</div>
+				</li>
+					</ul>
+					<div class="form-row place-order">
+					<noscript>
+						Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="Update totals">Update totals</button>
+					</noscript>
+			
+						<div class="woocommerce-terms-and-conditions-wrapper">
+					<div class="woocommerce-privacy-policy-text"><p>* By clicking "I agree to receive exclusive offers and up to date news.” I hereby give my express consent to recurring contact via text messages from prevent.app. I agree to be contacted by prevent.app and other marketing partners that might use auto-dialers or prerecorded messages to call or text me to the phone number I provided. I am not required to enter into this agreement as a condition of purchasing property, goods, or services and I understand that I can revoke this consent at any time. I also understand that I may opt-out of SMS communication at any time (reply 'STOP' to opt-out, 'HELP' for more information. Terms &amp; Conditions/Privacy Policy Apply <a href="http://s22485.h5.modhost.pro/?page_id=3" class="woocommerce-privacy-policy-link" target="_blank">privacy policy</a>.</p>
+			</div>
+						</div>
+				
 					
-				</form>
-
-				</div>
-					</div><!-- .entry-content -->
-
-				</article><!-- #post-9 -->
-
-        
-            </div>
-
-        </main>
+					<button type="submit" class="button button--theme-black alt" name="woocommerce_checkout_place_order" id="place_order" value="Place order" data-value="Place order">Proceed to PayPal</button>
+					
+					<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="53b64e29b8"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">	</div>
+			</div>
+			
+								</div>
+			
+								
+							</div>
+			
+			
+						
+			
+			
+				
+			
+				
+			
+			</div></form></div>
+			
+			</div></article>
+			<!-- #post-9 -->
+			
+			
+			
+			
+			
+			</main>
        <!--start bottom-blocks-->
       <div class="bottom-blocks">
         <div class="call-form section section--margin call-form--turquoise-bg">
