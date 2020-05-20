@@ -2553,6 +2553,7 @@ input[type="radio"]{
 .woocommerce-form-login{
     .input-text{
         max-width: 300px;
+        width: 100%;
     }
     .form-row + .form-row{
         margin-top: 10px;
@@ -2563,4 +2564,20 @@ input[type="radio"]{
         margin-right: 5px;
         display: inline-block;
     }
+
+    .button{
+        display: block;
+       margin: 10px 0 10px 90px;
+
+       @include for-sm(){
+           max-width: 300px;
+           width: 100%;
+           margin: 10px 0;
+       }
+
+    }
+}
+
+.lost_password a{
+    color: $LightTeal;
 }
