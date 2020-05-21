@@ -50,6 +50,11 @@ a,button{
 
 body{
     font-family: 'Work Sans', sans-serif;
+
+    &.js-active{
+        position: relative;
+        overflow: hidden;
+    }
 }
 .subhead{
     font-weight: 500;
@@ -411,7 +416,10 @@ img{
         height: 56px;
         
     }
-
+    &--size-wide{
+        width: 210px;
+        height: 60px;
+    }
     &--size-big{
         width: 228px;
         height: 58px;
@@ -680,6 +688,116 @@ img{
             }
         }
 
+    }
+}
+.main-menu{
+    width: 30%;
+    min-width: 362px;
+    padding-top: 24px;
+    position: fixed;
+    height:100vh;
+    
+    left: 0;
+    top: 0;
+    background-color: $white;
+    z-index: 5000;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: .3s ease-in-out;
+    
+    @include for-xl(){
+        width: 362px;
+    }
+    @include for-tiny-mob(){
+        width: 100%;
+        min-width: 100%;
+    }
+
+    &.js-active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    // &__container{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: flex-end;
+    // }
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding-right: 18px;
+        margin-bottom: 29px;
+        box-sizing: border-box;
+        padding-left: 40%;
+        @include for-xl(){
+            padding-left: 34px;
+        }
+    }
+
+    &__close{
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            transform:rotate(90deg);
+        }
+    }
+    &__close-icon{
+        height: 100%;
+        width: 100%;
+    }
+    &__links-nav{
+        box-sizing: border-box;
+        padding: 10px 0;
+        border-top: 1px solid $LightGrey;
+        border-bottom: 1px solid $LightGrey;
+        box-sizing: border-box;
+        padding-left: 40%;
+        @include for-xl(){
+            padding-left: 40px;
+        }
+    }
+    &__list-link{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: $LightTeal;
+        text-decoration: none;
+        transition: .3s;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    &__list-link-icon{
+        height: 24px;
+        width: 24px;
+        flex-shrink: 0;
+        margin-right: 11px;
+        stroke: $DarkTeal;
+    }
+    &__list-item + &__list-item{
+        margin-top: 12px;
+    }
+    &__nav{
+        margin-top: 17px;
+        box-sizing: border-box;
+        padding-left: 40%;
+        @include for-xl(){
+            padding-left: 40px;
+        }
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+        text-decoration: none;
+        transition: .3s;
+        &:hover{
+            color: $LightTeal
+        }
     }
 }
 .get-started-form{
@@ -2229,6 +2347,11 @@ table{
     .button{
         margin-top: 16px;
         margin-left: auto;
+        color: $white;
+
+        &:hover{
+            color: $black;
+        }
 
         
     }
@@ -2418,19 +2541,32 @@ table{
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow{
-    width: 10px;
-    height: 5px;
-    background: url(../images/icons/arrow-select.svg);
+    width: 12px;
+    height: 8px;
+    top: 50%;
+    background: url(../images/icons/arrow-select.svg) no-repeat center center;
+    background-size: contain;
+    right: 10px;
     border: none;
-    margin-top: -2.5px;
+    margin-top: -4px;
     border-color: transparent;
+    transition: .3s;
+    b{
+        display: none;
+    }
 }
 
+.select2-container--default.select2-container--open{
+    .select2-selection--single .select2-selection__arrow{
+        transform: rotate(180deg);
+    }
+}
 #order_comments{
     display: block;
     width: 100%;
     height: 103px;
     resize: none;
+    border-color: $LightGrey;
     background-color: $bg;
     font-size: 16px;
     line-height: 24px;
@@ -2461,6 +2597,7 @@ table{
             }
         }
         .button{
+            margin-bottom: -1px;
             margin-left: -100px;
 
             @include for-sm(){
@@ -2532,23 +2669,12 @@ input[type="radio"]{
 }
 
 
-.wc-stripe-cc-form{
-    border: 1px solid $LightGrey;
-    border-radius: 8px;
-    padding: 10px;
-    .form-row{
-     
-        width: 100%;
 
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
-}
 
 .showlogin{
     color: $LightTeal;
     font-weight: 500;
+    text-decoration: none;
 }
 .woocommerce-form-login{
     .input-text{
@@ -2580,4 +2706,47 @@ input[type="radio"]{
 
 .lost_password a{
     color: $LightTeal;
+}
+
+.woocommerce-message{
+    background-color: transparent !important;
+
+    .container{
+        background-color: $LightGreen;
+        border: 1px solid $Green;
+        box-sizing: border-box;
+        padding: 6px 20px;
+        border-radius: 8px;
+    }
+}
+
+.woocommerce-error{
+    background-color: #FADEE3 !important;
+    border: 1px solid #EE5265;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.restore-item{
+    color: $LightTeal;
+}
+.container-cart-empty{
+    .woocommerce-message{
+        margin-bottom: 20px;
+    }
+}
+
+#wc-stripe-cc-form{
+    margin-top: 20px;
+    border: 1px solid $LightGrey;
+    border-radius: 8px;
+    padding: 10px;
+    .form-row{
+     
+        width: 100%;
+
+        &-last,&:last-child{
+            margin-bottom: 0;
+        }
+    }
 }

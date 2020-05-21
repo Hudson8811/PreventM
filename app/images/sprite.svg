@@ -154,5 +154,9 @@
 <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16 12v4l2 2"></path>
 <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M22.013 23.133l-0.467 5.107c-0.060 0.665-0.367 1.283-0.861 1.732s-1.138 0.697-1.806 0.694h-5.773c-0.668 0.003-1.312-0.245-1.806-0.694s-0.801-1.067-0.861-1.732l-0.467-5.107M9.987 8.867l0.467-5.107c0.060-0.663 0.365-1.279 0.856-1.728s1.132-0.698 1.797-0.699h5.8c0.668-0.003 1.312 0.245 1.806 0.694s0.801 1.067 0.861 1.732l0.467 5.107"></path>
 </symbol>
+<symbol id="icon-close" viewBox="0 0 24 24">
+<path d="M20 20.0001L3.99986 3.99999" stroke="#E0E5EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 20.0001L20.0001 3.99998" stroke="#E0E5EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 </defs>
 </svg>

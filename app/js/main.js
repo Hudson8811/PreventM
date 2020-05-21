@@ -91,6 +91,15 @@ $('.articles__slider').slick({
     galleryThumbs.slideTo( $(".swiper-nav__img").length, 300);
     galleryTop.slideTo( $(".swiper-nav__img").length, 300);
   });
+  $(".header__burger").click(function(){
+    $(".main-menu").toggleClass("js-active");
+    $("body").toggleClass("js-active");
+  });
+  $(".main-menu__close").click(function(){
+    $(".main-menu").toggleClass("js-active");
+    $("body").toggleClass("js-active");
+  });
+
 
   var galleryTop = new Swiper('.gallery', {
     spaceBetween: 10,

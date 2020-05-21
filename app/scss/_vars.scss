@@ -9,10 +9,12 @@ $darkGrey:#576473;
 $MedGrey:#98A5B3;
 $LightGrey:#E0E5EA;
 $turquoise:#BFE7F3;
+$LightGreen:#EAFFF5;
+$Green:#A0DDC7;
 $bg:#EFF2F4;
 
 @mixin for-xl {
-    @media (max-width: 1300px) { @content; }
+    @media (max-width: 1440px) { @content; }
   }
 
 
