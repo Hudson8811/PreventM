@@ -720,6 +720,7 @@ img{
     &.js-active{
         transform: translateX(0);
         opacity: 1;
+        box-shadow: 5px 0px 15px rgba(97, 113, 132, 0.5);
     }
     // &__container{
     //     display: flex;
