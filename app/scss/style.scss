@@ -2527,6 +2527,7 @@ table{
     font-size: 12px;
     line-height: 15px;
     color: $darkGrey;
+    cursor: pointer;
 }
 .checkout .form-row input[type="checkbox"]{
     height: 25px;
@@ -2765,6 +2766,7 @@ input[type="radio"] + label{
     padding-left: 35px;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
     &:before{
         content: '';
         position: absolute;
@@ -2775,6 +2777,10 @@ input[type="radio"] + label{
         border-radius: 50%;
         border: 1px solid $LightGrey;
         background-color: $bg;
+    }
+
+    img{
+        margin: -5px 10px;
     }
 }
 
