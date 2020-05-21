@@ -2414,6 +2414,10 @@ table{
    }
    h2 + form{
        margin-top: 75px;
+
+       @include for-sm(){
+           margin: 20px 0 50px;
+       }
    }
    h2+h3{
        font-size: 20px;
@@ -2593,7 +2597,9 @@ table{
     border-radius: 8px;
 }
 .checkout_coupon {
-    margin-bottom: 20px;
+    max-width: 490px;
+    margin: 0 auto 20px;
+    text-align: center;
     .form-row{
         display: inline-block;
 
@@ -2694,11 +2700,17 @@ table{
     .form-row + .form-row{
         margin-top: 10px;
     }
+    .woocommerce-form-login__rememberme{
+        margin-top: 10px;
+        display: inline-block;
+    }
     .woocommerce-form__input-checkbox{
-        height: 10px;
-        width: 10px;
+        height: 25px;
+        width: 25px;
         margin-right: 5px;
         display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 2px;
     }
 
     .woocommerce-form-login__submit{
@@ -2775,6 +2787,7 @@ input[type="radio"] + label{
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
+    cursor: pointer;
     &:before{
         content: '';
         position: absolute;
@@ -2808,4 +2821,81 @@ input[type="radio"]:checked + label{
         background-color: $LightTeal;
         border-radius: 50%;
     }
+}
+
+.woocommerce-form-login{
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+}
+.woocommerce-info{
+    text-align: center;
+}
+
+.woocommerce-order-details__title{
+    margin-bottom: 20px;
+}
+.order_details{
+    thead  th{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 19px 25px;
+        text-align: left;
+        
+    }
+    tbody .product-name{
+        width: 70%;
+    }
+
+    tbody{
+        td{
+            padding: 20px 25px;
+        }
+        tr{
+            &:nth-child(even){
+                td{
+                    background-color: $bg;
+                }
+            }
+
+        }
+    }
+
+    tfoot{
+
+        th{
+            padding-left: 50%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: $darkGrey;
+            text-align: left;
+
+            @include for-sm(){
+                padding-left: 40px;
+            }
+        }
+        td{
+            padding-left: 25px;
+            color: #EE5265;
+            font-weight: 500;
+        }
+    }
+
+   
+}
+.woocommerce-thankyou-order-details{
+    padding: 20px 0;
+    li{
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+    }
+    li + li{
+        margin-top: 10px;
+    }
+}
+
+.container-thankyou{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
