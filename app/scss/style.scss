@@ -2412,6 +2412,13 @@ table{
    h1,h2,h3{
         text-align: center;
    }
+   h2 + form{
+       margin-top: 75px;
+   }
+   h2+h3{
+       font-size: 20px;
+       line-height: 23px;
+   }
    h3{
        margin: -20px -100px 46px;
        @include for-md(){
