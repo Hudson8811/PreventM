@@ -18,13 +18,17 @@ input{
     border: 1px solid $LightGrey;
     box-sizing: border-box;
     padding: 0 16px;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 15px;
     color: $darkGrey;
 
     &::placeholder{
         color: $MedGrey;
     }
+}
+textarea{
+    font-size: 12px;
+    line-height: 15px;
 }
 html,
 body {
@@ -2443,11 +2447,14 @@ table{
     }
     .woocommerce-form-register__submit{
         display: block;
-        max-width: 219px;
+    
         margin: 30px auto 22px;
         padding-left: 5px;
         padding-right: 5px;
         text-align: center;
+    }
+    .woocommerce-form-login__submit{
+        margin: 30px auto 20px;
     }
 }
 table{
@@ -2534,10 +2541,13 @@ table{
     border: none;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered{
-    font-size: 10px;
-    line-height: 43px;
+    font-size: 12px;
+    line-height: 41px;
+    padding-left: 16px;
     color: #576473;
     background-color: $bg;
+    border-radius: 8px;
+    border: 1px solid $LightGrey;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow{
@@ -2548,7 +2558,7 @@ table{
     background-size: contain;
     right: 10px;
     border: none;
-    margin-top: -4px;
+    margin-top: -3px;
     border-color: transparent;
     transition: .3s;
     b{
@@ -2568,8 +2578,6 @@ table{
     resize: none;
     border-color: $LightGrey;
     background-color: $bg;
-    font-size: 16px;
-    line-height: 24px;
     box-sizing: border-box;
     padding: 14px;
     border-radius: 8px;
@@ -2628,14 +2636,6 @@ table{
     }
 }
 
-input[type="radio"]{
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    vertical-align: middle;
-    margin-right: 4px;
-    margin-top: -1px;
-}
 
 .product-name{
     color: $LightTeal;
@@ -2691,7 +2691,7 @@ input[type="radio"]{
         display: inline-block;
     }
 
-    .button{
+    .woocommerce-form-login__submit{
         display: block;
        margin: 10px 0 10px 90px;
 
@@ -2748,5 +2748,45 @@ input[type="radio"]{
         &-last,&:last-child{
             margin-bottom: 0;
         }
+    }
+}
+
+
+.login-reg-col-1 form, .login-reg-col-2 form{
+    width: 300px !important;
+}
+.input-radio{
+    display: none;
+}
+.input-radio + label{
+    position: relative;
+    padding-left: 35px;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        top: -3px;
+        border-radius: 50%;
+        border: 1px solid $LightGrey;
+        background-color: $bg;
+    }
+}
+
+.input-radio:checked + label{
+
+    &:before{
+        border-color: $LightTeal;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 4px;
+        height: 11px;
+        width: 11px;
+        background-color: $LightTeal;
+        border-radius: 50%;
     }
 }
