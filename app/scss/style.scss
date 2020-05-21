@@ -2524,17 +2524,18 @@ table{
     font-weight: 500;
 }
 .checkbox {
-    font-size: 9px;
-    line-height: 12px;
-    color: $fullBlack;
+    font-size: 12px;
+    line-height: 15px;
+    color: $darkGrey;
 }
 .checkout .form-row input[type="checkbox"]{
-    height: 10px;
-    width: 10px;
+    height: 25px;
+    width: 25px;
     background-color: #C4C4C4;
     display: inline-block;
     vertical-align: middle;
     margin-right: 4px;
+    margin-bottom: 3px;
 }
 .select2-container .select2-selection--single{
     height: 43px;
@@ -2704,7 +2705,8 @@ table{
     }
 }
 
-.lost_password a{
+.lost_password a,.about_paypal{
+    text-decoration: none;
     color: $LightTeal;
 }
 
@@ -2755,12 +2757,14 @@ table{
 .login-reg-col-1 form, .login-reg-col-2 form{
     width: 300px !important;
 }
-.input-radio{
+input[type="radio"]{
     display: none;
 }
-.input-radio + label{
+input[type="radio"] + label{
     position: relative;
     padding-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
     &:before{
         content: '';
         position: absolute;
@@ -2774,7 +2778,8 @@ table{
     }
 }
 
-.input-radio:checked + label{
+input[type="radio"]:checked + label{
+  
 
     &:before{
         border-color: $LightTeal;
