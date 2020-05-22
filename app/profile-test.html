@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--start header-->
+        <header class="header  section section--fluid">
+            <div class="header__row">
+              <div class="header__left">
+                <div class="burger header__burger ">
+                    <svg class="burger__icon burger__icon--black"><use xlink:href="images/sprite.svg#icon-Menu"></use></svg>
+                </div>
+                <div class="logo header__logo logo--size-medium">
+                    <a class="logo__image" href="/" style="background-image: url(images/logo3.svg);"></a>
+                </div>
+              </div>
+              <div class="header__right">
+                <a class="hyper-link header__hyper-link header__hyper-link--teal" href="#">
+                    + Invite Friends
+                   </a>
+                   <a href="#" class="button header__button button--theme-teal">
+                    Request Kit
+                   </a>
+                   <a  class="basket-btn header__basket-btn" href="#">
+                    <svg class="basket-btn__icon"><use xlink:href="images/sprite.svg#icon-Cart"></use></svg>
+                    <span class="basket-btn__value">
+                        0
+                    </span>
+                   </a>
+
+              </div>
+            </div>
+        
+        </header>
+        <!--end header-->
+
+        <main class="main" id="main">
+           
+			<div class="container">
+		
+                <div class="woocommerce"><div class="myaccount-pages-flex-wrap">
+    
+    <nav class="woocommerce-MyAccount-navigation">
+        <ul>
+                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard">
+                    <a href="http://s22485.h5.modhost.pro/my-account/">Dashboard</a>
+                </li>
+                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--orders">
+                    <a href="http://s22485.h5.modhost.pro/my-account/orders/">Orders</a>
+                </li>
+                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--downloads">
+                    <a href="http://s22485.h5.modhost.pro/my-account/downloads/">Downloads</a>
+                </li>
+                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
+                    <a href="http://s22485.h5.modhost.pro/my-account/edit-address/">Addresses</a>
+                </li>
+                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--payment-methods">
+                    <a href="http://s22485.h5.modhost.pro/my-account/payment-methods/">Payment methods</a>
+                </li>
+                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account is-active">
+                    <a href="http://s22485.h5.modhost.pro/my-account/edit-account/">Account details</a>
+                </li>
+                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout">
+                    <a href="http://s22485.h5.modhost.pro/my-account/customer-logout/?_wpnonce=a6fa4967b4">Logout</a>
+                </li>
+                </ul>
+    </nav>
+    
+    
+    <div class="woocommerce-MyAccount-content">
+        <div class="woocommerce-notices-wrapper"></div>
+    <form class="woocommerce-EditAccountForm edit-account" action="" method="post">
+    
+        
+        <p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
+            <label for="account_first_name">First name&nbsp;<span class="required">*</span></label>
+            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="">
+        </p>
+        <p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
+            <label for="account_last_name">Last name&nbsp;<span class="required">*</span></label>
+            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_last_name" id="account_last_name" autocomplete="family-name" value="">
+        </p>
+        <div class="clear"></div>
+    
+        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+            <label for="account_display_name">Display name&nbsp;<span class="required">*</span></label>
+            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_display_name" id="account_display_name" value="nikita.elagin2012"> <span><em>This will be how your name will be displayed in the account section and in reviews</em></span>
+        </p>
+        <div class="clear"></div>
+    
+        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+            <label for="account_email">Email address&nbsp;<span class="required">*</span></label>
+            <input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="nikita.elagin2012@yandex.ru">
+        </p>
+    
+        <fieldset>
+            <legend>Password change</legend>
+    
+            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                <label for="password_current">Current password (leave blank to leave unchanged)</label>
+                <span class="password-input"><input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" autocomplete="off"><span class="show-password-input"></span></span>
+            </p>
+            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                <label for="password_1">New password (leave blank to leave unchanged)</label>
+                <span class="password-input"><input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_1" id="password_1" autocomplete="off"><span class="show-password-input"></span></span>
+            </p>
+            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                <label for="password_2">Confirm new password</label>
+                <span class="password-input"><input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_2" id="password_2" autocomplete="off"><span class="show-password-input"></span></span>
+            </p>
+        </fieldset>
+        <div class="clear"></div>
+    
+        
+        <p>
+            <input type="hidden" id="save-account-details-nonce" name="save-account-details-nonce" value="5a9b1f5c7f"><input type="hidden" name="_wp_http_referer" value="/my-account/edit-account/">		<button type="submit" class="woocommerce-Button button button--theme-darkteal" name="save_account_details" value="Save changes">Save changes</button>
+            <input type="hidden" name="action" value="save_account_details">
+        </p>
+    
+        </form>
+    
+    </div>
+    </div>
+    </div>
+        </div>
+
+        </main>
+       <!--start bottom-blocks-->
+      <div class="bottom-blocks">
+        <div class="call-form section section--margin call-form--turquoise-bg">
+            <div class="call-form__decor call-form__decor--big" data-aos="fade-right"  data-aos-duration="500">
+                <img class="call-form__image" src="images/call-form-decor2.png" alt="">
+            </div>
+               <div class="container">
+                    <div class="row call-form__row align-items-lg-center">
+                       
+                        <div class="col-lg-5 offset-lg-2">
+                           <div class="call-form__text">
+                               <h2 class="call-form__title call-form__title--black">
+                                Don't be scared,  <br>
+                                be prepared.
+                               </h2>
+                               <p class="exerpt call-form__exerpt call-form__exerpt--black">
+                                Subscribe to our Weekly Digest to be <br>
+                                on top of what happening in the world.
+                               </p>
+                           </div>
+                        </div>
+                        <div class="col-lg-5">
+                           <div class="call-form__group">
+                            <label class="call-form__input-container">
+                               <input class="call-form__input" placeholder="Email Address"  type="email" required>
+                            </label>
+                            <button type="submit" class="button call-form__button button--theme-black">
+                                Join the List
+                            </button>
+                           </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+           <div class="logos">
+               <div class="container">
+                   <div class="logos__row">
+                       <div class="logos__item"><img class="logos__img" src="images/logos/1.svg" alt=""></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/2.svg" alt="" ></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/3.svg" alt="" ></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/4.svg" alt=""></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/5.svg" alt="" ></div>
+                   </div>
+               </div>
+           </div>
+        
+           <footer class="footer" id="footer" >
+                <div class="container p-xl-0">
+                <p class="hint-text" data-aos="fade-up" data-aos-duration="700">
+                    Et deserunt officia consectetur duis commodo qui minim nostrud culpa labore ex sint adipisicing. Laboris mollit id laborum dolore eiusmod adipisicing commodo commodo voluptate eu consequat quis ipsum veniam. Adipisicing enim ipsum veniam exercitation amet culpa cillum consequat ea consequat qui. Veniam cillum excepteur officia esse fugiat sunt labore nisi mollit. Eu aute do enim do reprehenderit exercitation duis velit enim elit velit sunt occaecat Lorem. 
+                </p>
+    
+                    <p class="footer__copy hint-text" data-aos="fade-up" data-aos-duration="700">
+                        © 2020 Prevent.app. All Rights Reserved.
+                    </p>
+                </div>
+           </footer>
+      </div>
+       <!--end bottom-blocks-->
+    <div class="live-chat" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="700">
+        <div class="live-chat__text">
+            <p class="hint-text">
+                Have any questions?  <br>
+                Chat with a live doctor here
+            </p>
+        </div>
+        <button class="live-chat__btn">
+            <svg class="live-chat__icon"><use xlink:href="images/sprite.svg#icon-Message-circle"></use></svg>
+        </button>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

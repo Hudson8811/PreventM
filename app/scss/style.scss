@@ -294,6 +294,17 @@ p{
             color: $white;
         }
     }
+
+    &--theme-darkteal{
+        border-color: $DarkTeal;
+        background-color: $DarkTeal;
+        color: $white;
+
+        &:hover{
+            background-color: $white;
+            color: $DarkTeal;
+        }
+    }
 }
 img{
     max-width: 100%;
@@ -2898,4 +2909,109 @@ input[type="radio"]:checked + label{
 .container-thankyou{
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+
+.myaccount-pages-flex-wrap{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+
+.woocommerce-MyAccount-navigation{
+    max-width: 240px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px 20px 37px 35px;
+    border: 1px solid $LightGrey;
+    border-radius: 8px;
+    margin-right: 47px;
+    flex-shrink: 0;
+
+    &-link + &-link{
+        margin-top: 12px;
+    }
+
+    &-link.is-active{
+     a{
+        color: $LightTeal;
+     }
+    }
+
+    .woocommerce-MyAccount-navigation-link--customer-logout{
+        a{
+            position: relative;
+            padding-left: 20px;
+            box-sizing: border-box;
+
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -7.5px;
+                height: 15px;
+                width: 15px;
+                background: url(../images/icons/LogOut.svg) no-repeat center left;
+                transition: .3s;
+            }
+
+            &:hover{
+              &:before{
+                background-image: url(../images/icons/LogOut_hover.svg);
+              }
+            }
+        }
+    }
+    a{
+        font-size: 16px;
+        line-height: 24px;
+        color: $darkGrey;
+        text-decoration: none;
+        transition: .3s;
+        &:hover{
+            color: $LightTeal;
+        }
+    }
+}
+
+.edit-account{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    em{
+        display: block;
+        margin-top: 5px;
+    }
+
+    > .form-row{
+        width: 48%;
+        margin-bottom: 12px;
+
+        input{
+            width: 100%;
+        }
+    }
+    > .clear{
+        display: none;
+    }
+    fieldset{
+        border-color: $LightGrey;
+        width: 100%;
+        margin: 12px 0;
+
+        legend{
+            color: $darkGrey;
+        }
+        input{
+            width: 100%;
+        }
+
+        .form-row:not(:last-child){
+            margin-bottom: 12px;
+        }
+    }
 }
