@@ -3015,3 +3015,47 @@ input[type="radio"]:checked + label{
         }
     }
 }
+
+.woocommerce{
+    a{
+        text-decoration: none;
+        
+    }
+}
+
+.woocommerce-Address{
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 15px 0;
+
+    a{
+        color: $LightTeal;
+    }
+}
+
+.account-orders-table.shop_table {
+
+    a{
+        color: $DarkTeal;
+    }
+  thead{
+    th{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        padding: 20px 15px;
+        text-align: left;
+    }
+   
+  }
+  td{
+    padding: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+}
+
+.woocommerce-MyAccount-content{
+    width: 100%;
+}
