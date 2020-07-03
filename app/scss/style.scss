@@ -1600,7 +1600,8 @@ img{
         @include  for-md{
             max-width: 456px;
             
-            margin: 0 auto 20px;
+            margin: 0 auto;
+            height: 100%;
         }
         @include for-sm(){
             padding: 40px;
