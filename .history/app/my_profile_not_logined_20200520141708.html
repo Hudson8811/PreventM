@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--start header-->
+        <header class="header  section section--fluid">
+            <div class="header__row">
+              <div class="header__left">
+                <div class="burger header__burger ">
+                    <svg class="burger__icon burger__icon--black"><use xlink:href="images/sprite.svg#icon-Menu"></use></svg>
+                </div>
+                <div class="logo header__logo logo--size-medium">
+                    <a class="logo__image" href="/" style="background-image: url(images/logo3.svg);"></a>
+                </div>
+              </div>
+              <div class="header__right">
+                <a class="hyper-link header__hyper-link header__hyper-link--teal" href="#">
+                    + Invite Friends
+                   </a>
+                   <a href="#" class="button header__button button--theme-teal">
+                    Request Kit
+                   </a>
+                   <a  class="basket-btn header__basket-btn" href="#">
+                    <svg class="basket-btn__icon"><use xlink:href="images/sprite.svg#icon-Cart"></use></svg>
+                    <span class="basket-btn__value">
+                        0
+                    </span>
+                   </a>
+
+              </div>
+            </div>
+
+        </header>
+        <!--end header-->
+
+        <main class="main" id="main">
+
+
+            <div class="container">
+
+
+                <article id="post-10" class="post-10 page type-page status-publish hentry">
+                    <!-- <header class="entry-header">
+                      	</header>.entry-header -->
+
+
+                    <div class="entry-content">
+                        <div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
+
+                <div class="u-columns col2-set" id="customer_login">
+
+                    <div class="u-column1">
+                        <h1 class="entry-title">Sign-In</h1>
+
+                        <form class="woocommerce-form woocommerce-form-login login" method="post">
+
+
+                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                <label for="username">Email address&nbsp;<span class="required">*</span></label>
+                                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="">
+                            </p>
+                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                <label for="password">Password&nbsp;<span class="required">*</span></label>
+                                <span class="password-input"><input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password"><span class="show-password-input"></span></span>
+                            </p>
+
+
+                            <p class="form-row">
+                                <!-- <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                                    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Запомнить меня</span>
+                                </label> -->
+                                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="f955750b89"><input type="hidden" name="_wp_http_referer" value="/pervent/my-account/">				<button type="submit" class="woocommerce-button button--theme-black button woocommerce-form-login__submit" name="login" value="Sign In">Sign In</button>
+                            </p>
+                            <p class="woocommerce-LostPassword lost_password">
+                                Don't have an account? <a href="#">Create one</a>
+                                <!-- <a href="http://localhost/pervent/my-account/lost-password/">Забыли свой пароль?</a> -->
+                            </p>
+
+
+                        </form>
+
+
+                    </div>
+
+                    <div class="u-column2">
+
+                        <h1>Register</h1>
+                        <h3>Please fill in the information below</h3>
+                        <form method="post" class="woocommerce-form woocommerce-form-register register">
+
+                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                <label for="first_name">First name&nbsp;<span class="required">*</span></label>
+                                <span class="input-text"><input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="name" id="first_name" autocomplete="new-password"><span class="show-password-input"></span></span>
+                            </p>
+                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                <label for="last_name">Last name&nbsp;<span class="required">*</span></label>
+                                <span class="input-text"><input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="last name" id="last_name" autocomplete="new-password"><span class="show-password-input"></span></span>
+                            </p>
+
+                            <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                <label for="reg_email">Email&nbsp;<span class="required">*</span></label>
+                                <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" autocomplete="email" value="">			</p>
+
+
+                                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                                    <label for="reg_password">Password&nbsp;<span class="required">*</span></label>
+                                    <span class="password-input"><input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" autocomplete="new-password"><span class="show-password-input"></span></span>
+                                </p>
+
+                                <p class="woocommerce-form-row form-row">
+                                    <input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="65dd554970"><input type="hidden" name="_wp_http_referer" value="/pervent/my-account/">				<button type="submit" class="woocommerce-Button woocommerce-button button button--theme-black woocommerce-form-register__submit" name="register" value="Регистрация">Create An Account</button>
+                                </p>
+
+
+                            <!-- <div class="woocommerce-privacy-policy-text"><p>Ваши личные данные будут использоваться для упрощения вашей работы с сайтом, управления доступом к вашей учётной записи и для других целей, описанных в нашей <a href="http://localhost/pervent/?page_id=3" class="woocommerce-privacy-policy-link" target="_blank">политика конфиденциальности</a>.</p> -->
+                    </div>
+
+                            <!-- <p class="woocommerce-LostPassword lost_password">
+                                Already Have An Account? <a href="#">
+                                    Sign In
+                                </a>
+                                <a href="http://localhost/pervent/my-account/lost-password/">Забыли свой пароль?</a>
+                            </p> -->
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                </div>
+                </div><!-- .entry-content -->
+
+                </article><!-- #post-10 -->
+             </div>
+
+
+
+
+
+
+
+
+
+        </main>
+       <!--start bottom-blocks-->
+      <div class="bottom-blocks">
+        <div class="call-form section section--margin call-form--turquoise-bg">
+            <div class="call-form__decor call-form__decor--big" data-aos="fade-right"  data-aos-duration="500">
+                <img class="call-form__image" src="images/call-form-decor2.png" alt="">
+            </div>
+               <div class="container">
+                    <div class="row call-form__row align-items-lg-center">
+
+                        <div class="col-lg-5 offset-lg-2">
+                           <div class="call-form__text">
+                               <h2 class="call-form__title call-form__title--black">
+                                Don't be scared,  <br>
+                                be prepared.
+                               </h2>
+                               <p class="exerpt call-form__exerpt call-form__exerpt--black">
+                                Subscribe to our Weekly Digest to be <br>
+                                on top of what happening in the world.
+                               </p>
+                           </div>
+                        </div>
+                        <div class="col-lg-5">
+                           <div class="call-form__group">
+                            <label class="call-form__input-container">
+                               <input class="call-form__input" placeholder="Email Address"  type="email" required>
+                            </label>
+                            <button type="submit" class="button call-form__button button--theme-black">
+                                Join the List
+                            </button>
+                           </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+           <div class="logos">
+               <div class="container">
+                   <div class="logos__row">
+                       <div class="logos__item"><img class="logos__img" src="images/logos/1.svg" alt=""></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/2.svg" alt="" ></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/3.svg" alt="" ></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/4.svg" alt=""></div>
+                       <div class="logos__item"><img class="logos__img" src="images/logos/5.svg" alt="" ></div>
+                   </div>
+               </div>
+           </div>
+
+           <footer class="footer" id="footer" >
+                <div class="container p-xl-0">
+                <p class="hint-text" data-aos="fade-up" data-aos-duration="700">
+                    Et deserunt officia consectetur duis commodo qui minim nostrud culpa labore ex sint adipisicing. Laboris mollit id laborum dolore eiusmod adipisicing commodo commodo voluptate eu consequat quis ipsum veniam. Adipisicing enim ipsum veniam exercitation amet culpa cillum consequat ea consequat qui. Veniam cillum excepteur officia esse fugiat sunt labore nisi mollit. Eu aute do enim do reprehenderit exercitation duis velit enim elit velit sunt occaecat Lorem.
+                </p>
+
+                    <p class="footer__copy hint-text" data-aos="fade-up" data-aos-duration="700">
+                        © 2020 Prevent.app. All Rights Reserved.
+                    </p>
+                </div>
+           </footer>
+      </div>
+       <!--end bottom-blocks-->
+    <div class="live-chat" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="700">
+        <div class="live-chat__text">
+            <p class="hint-text">
+                Have any questions?  <br>
+                Chat with a live doctor here
+            </p>
+        </div>
+        <button class="live-chat__btn">
+            <svg class="live-chat__icon"><use xlink:href="images/sprite.svg#icon-Message-circle"></use></svg>
+        </button>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
