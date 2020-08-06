@@ -31,7 +31,8 @@ gulp.task('css', function(){
     'node_modules/slick-carousel/slick/slick.css',
     'assest/css/bootstrap-grid.min.css',
     'assest/css/swiper.css',
-    'assest/css/aos.css'
+    'assest/css/aos.css',
+    'assest/css/jquery.arcticmodal-0.3.css'
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
